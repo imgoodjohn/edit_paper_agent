@@ -8,7 +8,7 @@ import { Heading, Subheading } from '@/components/heading'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/table'
 import { Text, Strong } from '@/components/text'
 import { Textarea } from '@/components/textarea'
-import React, { useEffect, useMemo, useState, useCallback } from 'react'
+import React, { useEffect, useMemo, useRef, useState, useCallback } from 'react'
 import { useParams } from 'next/navigation'
 import {
   api,
@@ -22,7 +22,7 @@ import {
   type Suggestion,
   type TodoItem,
 } from '@/lib/api'
-import { useSSE } from '@/lib/sse'
+import { useSSE, type SSEMessage } from '@/lib/sse'
 import { LatexPreview, DocxPreview, type PreviewBlock } from '@/lib/preview'
 import { useI18n } from '@/lib/i18n'
 import { Wizard, type WizardStep } from '@/components/wizard'
@@ -617,45 +617,6 @@ export default function SessionView() {
         </section>
       ) : null}
 
-      {/* ============ REPORT + AI DETECT — only after plan approved ============ */}
-      {session.plan_approved ? <Divider /> : null}
-      {session.plan_approved ? (
-      <section className="space-y-4">
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <Subheading>{t('session.report_ai')}</Subheading>
-          <div className="flex flex-wrap items-center gap-2">
-            <ModelPicker value={reportModel} onChange={setReportModel} label={t('model.report')} width="min-w-[200px]" />
-            <Button
-              onClick={() =>
-                wrap('report', async () => {
-                  const r = await api.reviewReport(sid, {
-                    language,
-                    ...(reportModel ? { model: reportModel } : {}),
-                  })
-                  setReport(r)
-                })
-              }
-              disabled={!session.journal_key || !!busy}
-            >
-              {busy === 'report' ? t('common.running') : t('session.gen_report')}
-            </Button>
-            <Button
-              onClick={() =>
-                wrap('ai-detect', async () => {
-                  const r = await api.aiDetect(sid, { language, ...(reportModel ? { model: reportModel } : {}) })
-                  setAiDet(r)
-                })
-              }
-              disabled={!!busy}
-            >
-              {busy === 'ai-detect' ? t('common.running') : t('session.compute_ai')}
-            </Button>
-          </div>
-        </div>
-        {report ? <ReportView report={report} /> : null}
-        {aiDet ? <AIDetectView result={aiDet} /> : null}
-      </section>
-      ) : null}
 
       {/* ============ EXPORT — only after plan approved ============ */}
       {session.plan_approved ? <Divider /> : null}
@@ -731,34 +692,39 @@ export default function SessionView() {
 
       <Divider />
 
-      {/* ============ PROGRESS / DECISION LOG ============ */}
-      <section className="space-y-2">
-        <Subheading>{t('session.activity')}</Subheading>
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-          {/* Live SSE events — ping hidden */}
-          <div className="rounded-xl border border-zinc-950/10 bg-zinc-50 p-3 dark:border-white/10 dark:bg-zinc-900">
-            <Strong className="text-xs">{t('session.live')}</Strong>
-            <div className="mt-2 max-h-64 space-y-1 overflow-auto">
-              {progress.filter(m => m.event !== 'ping').length === 0 ? (
-                <p className="text-xs text-zinc-400">{t('log.no_live_events')}</p>
-              ) : progress.filter(m => m.event !== 'ping').map((m, i) => {
-                let parsed: Record<string, unknown> = {}
-                try { parsed = JSON.parse(m.data) } catch { /* raw */ }
-                const stage = (parsed.stage as string) ?? (parsed.todo_title as string) ?? ''
-                return (
-                  <div key={i} className="flex items-start gap-2 rounded-md px-2 py-1 odd:bg-zinc-100 dark:odd:bg-zinc-800">
-                    <Badge color={m.event === 'ready' ? 'emerald' : m.event === 'progress' ? 'blue' : 'zinc'} className="shrink-0 mt-0.5">
-                      {m.event}
-                    </Badge>
-                    <span className="font-mono text-xs text-zinc-600 dark:text-zinc-400 break-all">
-                      {stage || m.data.slice(0, 120)}
-                    </span>
-                  </div>
-                )
-              })}
+      {/* ============ ACTIVITY — progress + decision log + report/AI ============ */}
+      <section className="space-y-3">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <Subheading>{t('session.activity')}</Subheading>
+          {session.plan_approved ? (
+            <div className="flex flex-wrap items-center gap-2">
+              <ModelPicker value={reportModel} onChange={setReportModel} label={t('model.report')} width="min-w-[180px]" />
+              <Button
+                onClick={() => wrap('report', async () => {
+                  const r = await api.reviewReport(sid, { language, ...(reportModel ? { model: reportModel } : {}) })
+                  setReport(r)
+                })}
+                disabled={!session.journal_key || !!busy}
+              >
+                {busy === 'report' ? t('common.running') : t('session.gen_report')}
+              </Button>
+              <Button
+                onClick={() => wrap('ai-detect', async () => {
+                  const r = await api.aiDetect(sid, { language, ...(reportModel ? { model: reportModel } : {}) })
+                  setAiDet(r)
+                })}
+                disabled={!!busy}
+              >
+                {busy === 'ai-detect' ? t('common.running') : t('session.compute_ai')}
+              </Button>
             </div>
-          </div>
-          {/* Decision log — semantic cards (includes tool calls) */}
+          ) : null}
+        </div>
+
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+          {/* Live SSE progress */}
+          <LiveProgressPanel progress={progress} />
+          {/* Decision log — semantic cards + tool calls */}
           <div className="rounded-xl border border-zinc-950/10 bg-zinc-50 p-3 dark:border-white/10 dark:bg-zinc-900">
             <Strong className="text-xs">{t('session.decision_log')}</Strong>
             <div className="mt-2 max-h-64 space-y-1.5 overflow-auto">
@@ -775,6 +741,11 @@ export default function SessionView() {
             </div>
           </div>
         </div>
+
+        {/* Reviewer report — collapsible card inside activity section */}
+        {report ? <CollapsibleReportView report={report} /> : null}
+        {/* AI detection — collapsible card inside activity section */}
+        {aiDet ? <CollapsibleAIDetectView result={aiDet} /> : null}
       </section>
 
       {error ? (
@@ -1196,6 +1167,126 @@ function DecisionLogCard({ entry }: { entry: LogEntry }) {
     </div>
   )
 }
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Map backend stage keys to display names
+const STAGE_LABEL: Record<string, string> = {
+  comprehend: 'Comprehension', plan: 'Planning', edit: 'Editing',
+  review_report: 'Review Report', ai_detect: 'AI Detection', compact: 'Memory Compact',
+}
+
+function parseLiveEvent(m: SSEMessage): { icon: string; label: string; color: 'emerald' | 'blue' | 'amber' | 'red' | 'zinc' } {
+  if (m.event === 'ready') return { icon: '✓', label: 'Connected', color: 'emerald' }
+  if (m.event !== 'progress') return { icon: '·', label: m.data.slice(0, 80), color: 'zinc' }
+  try {
+    const p = JSON.parse(m.data)
+    const stage = STAGE_LABEL[p.stage as string] ?? (p.stage as string) ?? ''
+    switch (p.kind as string) {
+      case 'stage_started': return { icon: '▶', label: `${stage}…`, color: 'blue' }
+      case 'stage_done':    return { icon: '✓', label: `${stage} done`, color: 'emerald' }
+      case 'edit_batch': {
+        const title = (p.todo_title as string)?.slice(0, 40) ?? p.todo_id
+        const batch = `${(p.batch_idx as number) + 1}/${p.batch_total}`
+        const news = p.new_suggestions ? ` +${p.new_suggestions}` : ''
+        return { icon: '✎', label: `${title} · batch ${batch}${news}`, color: 'blue' }
+      }
+      case 'tool_call': {
+        const summary = (p.summary as string)?.slice(0, 60) ?? ''
+        return { icon: '🔧', label: `${p.tool}${summary ? ` — ${summary}` : ''}`, color: 'zinc' }
+      }
+      case 'compact': return { icon: '⚡', label: `Memory compacted (+${p.n_new ?? 0})`, color: 'amber' }
+      default: {
+        const stage2 = (p.stage as string) ?? (p.todo_title as string) ?? ''
+        return { icon: '·', label: stage2 || m.data.slice(0, 80), color: 'zinc' }
+      }
+    }
+  } catch {
+    return { icon: '·', label: m.data.slice(0, 80), color: 'zinc' }
+  }
+}
+
+function LiveProgressPanel({ progress }: { progress: SSEMessage[] }) {
+  const { t } = useI18n()
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const visible = progress.filter(m => m.event !== 'ping')
+  useEffect(() => {
+    if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight
+  }, [visible.length])
+  return (
+    <div className="rounded-xl border border-zinc-950/10 bg-zinc-50 p-3 dark:border-white/10 dark:bg-zinc-900">
+      <Strong className="text-xs">{t('session.live')}</Strong>
+      <div ref={scrollRef} className="mt-2 max-h-64 space-y-1 overflow-auto">
+        {visible.length === 0 ? (
+          <p className="text-xs text-zinc-400">{t('log.no_live_events')}</p>
+        ) : visible.map((m, i) => {
+          const { icon, label, color } = parseLiveEvent(m)
+          return (
+            <div key={i} className="flex items-start gap-2 rounded-md px-2 py-1 odd:bg-zinc-100 dark:odd:bg-zinc-800">
+              <Badge color={color} className="shrink-0 mt-0.5">{icon}</Badge>
+              <span className="text-xs text-zinc-600 dark:text-zinc-400 break-all">{label}</span>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
+function CollapsibleReportView({ report }: { report: ReviewReport }) {
+  const { t } = useI18n()
+  const [open, setOpen] = useState(false)
+  const recKey = `report.${report.recommendation.replace(/-/g, '_')}` as Parameters<typeof t>[0]
+  const recLabel = t(recKey) ?? report.recommendation
+  const color = report.recommendation === 'accept' ? 'emerald'
+    : report.recommendation === 'reject' ? 'red' : 'amber'
+  return (
+    <div className="rounded-xl border border-zinc-950/10 bg-white dark:border-white/10 dark:bg-zinc-900">
+      <button
+        type="button"
+        className="flex w-full items-center gap-3 px-4 py-3 text-left"
+        onClick={() => setOpen(v => !v)}
+      >
+        <Badge color={color as 'emerald' | 'red' | 'amber'}>{recLabel}</Badge>
+        <Strong className="flex-1 text-sm">{t('session.report_ai')}</Strong>
+        <Strong className="text-sm">{report.scores.overall ?? '—'}/10</Strong>
+        <span className="text-xs text-zinc-400">{open ? '▲' : '▼'}</span>
+      </button>
+      {open && (
+        <div className="border-t border-zinc-100 px-4 pb-4 pt-3 dark:border-zinc-800">
+          <ReportView report={report} />
+        </div>
+      )}
+    </div>
+  )
+}
+
+function CollapsibleAIDetectView({ result }: { result: AIDetectionResult }) {
+  const { t } = useI18n()
+  const [open, setOpen] = useState(false)
+  const color = result.ai_likelihood >= 70 ? 'red' : result.ai_likelihood >= 40 ? 'amber' : 'emerald'
+  const verdictKey = `aidet.verdict.${result.verdict}` as Parameters<typeof t>[0]
+  const verdictLabel = t(verdictKey) ?? toTitle(result.verdict)
+  return (
+    <div className="rounded-xl border border-zinc-950/10 bg-white dark:border-white/10 dark:bg-zinc-900">
+      <button
+        type="button"
+        className="flex w-full items-center gap-3 px-4 py-3 text-left"
+        onClick={() => setOpen(v => !v)}
+      >
+        <Badge color={color}>{verdictLabel}</Badge>
+        <Strong className="flex-1 text-sm">{t('aidet.likelihood')}</Strong>
+        <Strong className="text-sm">{result.ai_likelihood}/100</Strong>
+        <span className="text-xs text-zinc-400">{open ? '▲' : '▼'}</span>
+      </button>
+      {open && (
+        <div className="border-t border-zinc-100 px-4 pb-4 pt-3 dark:border-zinc-800">
+          <AIDetectView result={result} />
+        </div>
+      )}
+    </div>
+  )
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 
 function ReportView({ report }: { report: ReviewReport }) {
