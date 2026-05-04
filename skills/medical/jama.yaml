@@ -1,0 +1,169 @@
+journal:
+  name: "JAMA (Journal of the American Medical Association)"
+  abbreviation: "JAMA"
+  publisher: "American Medical Association"
+  url: "https://jamanetwork.com/journals/jama/pages/instructions-for-authors"
+  issn: "0098-7484"
+  impact_factor: 63.1
+  open_access: false
+  discipline: ["medicine", "clinical_research", "public_health", "health_policy"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Leading peer-reviewed general medical journal covering clinical research, clinical
+    practice, public health, and health policy. Seeks work with the highest clinical
+    relevance, originality, and scientific rigor. Strict format and word limits enforced.
+  keywords:
+    - "clinical research"
+    - "clinical trial"
+    - "original investigation"
+    - "systematic review"
+    - "meta-analysis"
+    - "health policy"
+    - "public health"
+
+article_types:
+  - type: "Original Investigation"
+    word_limit: 3000
+    word_limit_scope: "main text"
+    abstract_limit: 350
+    abstract_type: "structured"
+    abstract_sections: ["Importance", "Objective", "Design/Setting/Participants", "Interventions", "Main Outcomes and Measures", "Results", "Conclusions and Relevance"]
+    figures_max: 5
+    tables_max: 5
+    references_max: 35
+    pages_max: null
+    notes: >
+      JAMA's unique 7-section structured abstract.
+      35-reference limit is STRICT and enforced.
+      Word limit 3000 for main text.
+
+  - type: "Brief Report"
+    word_limit: 1500
+    word_limit_scope: "main text"
+    abstract_limit: 250
+    abstract_type: "structured"
+    abstract_sections: ["Importance", "Objective", "Design", "Results", "Conclusions"]
+    figures_max: 2
+    tables_max: 2
+    references_max: 15
+    pages_max: null
+
+  - type: "Systematic Review"
+    word_limit: 3500
+    word_limit_scope: "main text"
+    abstract_limit: 350
+    abstract_type: "structured"
+    abstract_sections: ["Importance", "Objective", "Data Sources", "Study Selection", "Data Extraction and Synthesis", "Results", "Conclusions and Relevance"]
+    figures_max: 5
+    tables_max: 5
+    references_max: 50
+    pages_max: null
+
+  - type: "Viewpoint"
+    word_limit: 1200
+    word_limit_scope: "total"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: 1
+    tables_max: 1
+    references_max: 15
+    pages_max: null
+
+  - type: "Research Letter"
+    word_limit: 600
+    word_limit_scope: "total"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: 1
+    tables_max: 1
+    references_max: 6
+    pages_max: null
+
+format:
+  template: "jama_style"
+  latex_template_url: null
+  word_template_url: "https://jamanetwork.com/journals/jama/pages/instructions-for-authors"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "AMA"
+  keywords_required: false
+  keywords_count: null
+  notes: >
+    JAMA uses AMA reference style (numbered, not Vancouver).
+    Unique structured abstract format with Importance/Objective sections.
+    35-reference limit is STRICTLY enforced.
+
+sections:
+  required: ["Abstract", "Introduction", "Methods", "Results", "Discussion"]
+  optional: ["Conclusions", "Supplementary materials"]
+  order: ["Abstract", "Introduction", "Methods", "Results", "Discussion"]
+  notes: "Abstract has unique 7-section structure specific to JAMA"
+
+figures:
+  min_resolution_dpi: 350
+  preferred_formats: ["TIFF", "EPS", "JPEG"]
+  color_policy: "charged"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Conflict of interest disclosure (all authors, MANDATORY)"
+    - "Funding sources"
+    - "Author contributions"
+    - "Data sharing statement"
+    - "IRB approval"
+    - "Informed consent"
+  ethics_statement: true
+  clinical_trial_registration: true
+  orcid_required: false
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["CONSORT", "STROBE", "PRISMA", "STARD", "CARE"]
+  additional:
+    - "Managerial relevance statement: 150-200 words (for some journals in JAMA network)"
+    - "References strictly limited to 35 for Original Investigations"
+    - "Unique abstract structure: Importance/Objective required"
+    - "Clinical trials must be registered"
+    - "Human subjects: IRB approval required"
+
+submission:
+  system: "custom"
+  url: "https://manuscript.jama.com"
+  preprint_policy: "case_by_case"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract: exactly 7 structured sections for Original Investigation"
+    - "Abstract sections must be: Importance/Objective/Design.../Interventions/Main Outcomes.../Results/Conclusions and Relevance"
+    - "Abstract ≤350 words for Original Investigations"
+    - "Main text ≤3000 words"
+    - "Maximum 5 figures/tables"
+    - "References STRICTLY ≤35 (hard limit, enforced)"
+    - "Brief Report: ≤600 total words for Research Letters"
+  content_rules:
+    - "Work must have highest clinical relevance to medical practice"
+    - "Original investigation must address a clinically important question"
+    - "Results must directly answer the primary objective stated in abstract"
+    - "Statistical methods must include confidence intervals"
+  compliance_rules:
+    - "Conflict of interest disclosure mandatory for ALL authors"
+    - "IRB approval required for all human subjects research"
+    - "Clinical trial registration mandatory"
+    - "Informed consent required and documented"
+    - "Data sharing statement required"
+    - "CONSORT/STROBE/PRISMA reporting guidelines required"
+  language_rules:
+    - "Abstract must open with 'Importance' section explaining clinical relevance"
+    - "Use 'Main Outcomes and Measures' not 'Endpoints' or 'Outcomes'"
+    - "Use 'Conclusions and Relevance' not just 'Conclusions' in abstract"
+    - "AMA citation style: numbered with full author list"

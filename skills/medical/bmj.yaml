@@ -1,0 +1,170 @@
+journal:
+  name: "The BMJ (British Medical Journal)"
+  abbreviation: "BMJ"
+  publisher: "BMJ Publishing Group"
+  url: "https://www.bmj.com/about-bmj/resources-authors"
+  issn: "0959-8138"
+  impact_factor: 39.0
+  open_access: false
+  discipline: ["medicine", "clinical_research", "public_health", "health_policy", "global_health"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Leading general medical journal with a strong focus on clinical practice, research
+    methodology, and health policy. Known for patient and public involvement, open data,
+    and accessible communication. Strong emphasis on global health and health inequalities.
+  keywords:
+    - "clinical practice"
+    - "health policy"
+    - "global health"
+    - "clinical trial"
+    - "systematic review"
+    - "public health"
+    - "patient involvement"
+    - "open data"
+
+article_types:
+  - type: "Research"
+    word_limit: 4400
+    word_limit_scope: "main text (BMJ has the highest limit among top medical journals)"
+    abstract_limit: 400
+    abstract_type: "structured"
+    abstract_sections: ["Objectives", "Design", "Setting", "Participants", "Main outcome measures", "Results", "Conclusions"]
+    figures_max: 4
+    tables_max: 4
+    references_max: 50
+    pages_max: null
+    notes: >
+      BMJ has highest abstract limit (400) and main text limit (~4400) among top 5.
+      Structured abstract with 7 sections.
+
+  - type: "Analysis"
+    word_limit: 2500
+    word_limit_scope: "main text"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: 2
+    tables_max: 2
+    references_max: 30
+    pages_max: null
+
+  - type: "Systematic Review and Meta-Analysis"
+    word_limit: 4400
+    word_limit_scope: "main text"
+    abstract_limit: 400
+    abstract_type: "structured"
+    abstract_sections: ["Objectives", "Design", "Data sources", "Eligibility criteria", "Results", "Conclusions"]
+    figures_max: 5
+    tables_max: 5
+    references_max: 100
+    pages_max: null
+
+  - type: "Letter"
+    word_limit: 400
+    word_limit_scope: "total"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: 0
+    tables_max: 1
+    references_max: 5
+    pages_max: null
+
+  - type: "Editorial"
+    word_limit: 700
+    word_limit_scope: "total"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: 0
+    tables_max: 0
+    references_max: 10
+    pages_max: null
+    notes: "Mostly solicited"
+
+format:
+  template: "bmj_style"
+  latex_template_url: null
+  word_template_url: "https://www.bmj.com/about-bmj/resources-authors"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Vancouver"
+  keywords_required: false
+  keywords_count: null
+  notes: "BMJ requires 'What is already known / What this study adds' box"
+
+sections:
+  required: ["Abstract", "Introduction", "Methods", "Results", "Discussion"]
+  optional: ["Supplementary material", "What is already known / What this adds box"]
+  order: ["Abstract", "Introduction", "Methods", "Results", "Discussion"]
+  notes: "Key messages box (What is already known / What this study adds) required"
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["TIFF", "EPS", "PDF"]
+  color_policy: "free_online"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Competing interests (all authors, using ICMJE form)"
+    - "Funding"
+    - "Author contributions (CRediT)"
+    - "Data availability"
+    - "Patient and public involvement statement"
+    - "Ethics approval"
+    - "Informed consent"
+    - "Transparency declaration"
+  ethics_statement: true
+  clinical_trial_registration: true
+  orcid_required: true
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["CONSORT", "STROBE", "PRISMA", "ARRIVE", "CARE"]
+  additional:
+    - "Patient and public involvement (PPI) statement required"
+    - "Key messages box required: What is already known / What this adds"
+    - "Transparency declaration: 'The lead author affirms that this manuscript is an honest, accurate, and transparent account'"
+    - "ORCID required for all authors"
+    - "Open data strongly encouraged"
+    - "ICMJE conflict of interest form required"
+
+submission:
+  system: "Editorial Manager"
+  url: "https://submit.bmj.com"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "open"
+  notes: "BMJ uses open peer review; reviewers named in published papers"
+
+agents:
+  structure_rules:
+    - "Abstract: 7-section structured, ≤400 words (highest among top medical journals)"
+    - "Abstract sections: Objectives/Design/Setting/Participants/Main outcome measures/Results/Conclusions"
+    - "Main text ≤4400 words (also highest among top-5)"
+    - "Maximum 4 figures/tables"
+    - "References ≤50"
+    - "Key messages box required (What is already known / What this study adds)"
+    - "Transparency declaration required"
+  content_rules:
+    - "Must have clear clinical or public health relevance"
+    - "Patient and public involvement in study design must be described"
+    - "Open data encouraged"
+  compliance_rules:
+    - "ORCID required for ALL authors"
+    - "ICMJE conflict of interest form required"
+    - "Patient and public involvement statement required"
+    - "Clinical trial registration mandatory"
+    - "Ethics approval required"
+    - "Transparency declaration required from lead author"
+    - "CONSORT/STROBE/PRISMA as applicable"
+  language_rules:
+    - "Key messages box: bullet points for what is known + what this adds"
+    - "Abstract uses 'Setting' and 'Participants' for clinical studies"
+    - "Open, accessible language for broad medical audience"

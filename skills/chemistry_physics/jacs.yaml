@@ -1,0 +1,157 @@
+journal:
+  name: "Journal of the American Chemical Society"
+  abbreviation: "JACS"
+  publisher: "American Chemical Society (ACS)"
+  url: "https://pubs.acs.org/page/jacsat/submission/index.html"
+  issn: "0002-7863"
+  impact_factor: 15.0
+  open_access: false
+  discipline: ["chemistry", "organic_chemistry", "inorganic_chemistry", "physical_chemistry", "biochemistry", "materials"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Flagship journal of the ACS, publishing fundamental chemistry research of broad
+    interest. Covers all areas of chemistry with emphasis on outstanding research that
+    will significantly impact the field. Both Articles and Letters (Communications)
+    are published. Very high acceptance bar.
+  keywords:
+    - "organic chemistry"
+    - "inorganic chemistry"
+    - "physical chemistry"
+    - "biochemistry"
+    - "catalysis"
+    - "synthesis"
+    - "materials"
+    - "spectroscopy"
+    - "computational chemistry"
+    - "chemical biology"
+
+article_types:
+  - type: "Article"
+    word_limit: null
+    word_limit_scope: "no strict limit; concise reporting"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: >
+      Full research article. No strict word limit.
+      Comprehensive study with complete experimental data.
+      Supporting Information mandatory for full experimental details.
+
+  - type: "Communication"
+    word_limit: null
+    word_limit_scope: "brief; 4-6 printed pages typical"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: 2
+    references_max: null
+    pages_max: 6
+    notes: >
+      Rapid communication of new, highly significant results.
+      Expedited review process. Must note preliminary nature if applicable.
+
+  - type: "Perspective"
+    word_limit: null
+    word_limit_scope: "comprehensive"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Invited review on emerging area"
+
+format:
+  template: "acs_style"
+  latex_template_url: "https://pubs.acs.org/page/4authors/submission/acs-authoring-templates.html"
+  word_template_url: "https://pubs.acs.org/page/4authors/submission/acs-authoring-templates.html"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "ACS"
+  keywords_required: false
+  keywords_count: null
+  notes: >
+    ACS authoring templates available for Word and LaTeX.
+    Chemical structures: ChemDraw required with ACS 1996 document settings.
+    Supporting Information required for full experimental details.
+
+sections:
+  required: ["Abstract", "Introduction", "Results and Discussion", "Conclusion", "Experimental Section"]
+  optional: ["Supporting Information", "Acknowledgments", "Author Information"]
+  order: ["Abstract", "Introduction", "Results and Discussion", "Conclusion", "Experimental Section"]
+  notes: >
+    'Experimental Section' (not 'Methods') for chemistry.
+    Supporting Information: NMR spectra, X-ray data, full synthetic procedures.
+
+figures:
+  min_resolution_dpi: 600
+  preferred_formats: ["TIFF", "EPS", "PDF"]
+  color_policy: "free_online"
+  graphical_abstract: true
+  graphical_abstract_specs: "TOC/Abstract graphic: 8.5 cm x 4.75 cm, 300 dpi"
+  notes: >
+    TOC graphic required (Table of Contents / Abstract graphic).
+    ChemDraw required for structures using ACS 1996 document settings.
+    NMR spectra in SI; X-ray: CIF deposited at CCDC.
+
+checklist:
+  declarations_required:
+    - "Author contributions"
+    - "Conflict of interest"
+    - "Funding sources (Acknowledgments)"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: true
+  cover_letter: "required"
+  ai_use_disclosure: false
+  data_availability: false
+  reporting_guidelines: []
+  additional:
+    - "TOC graphic required (8.5 x 4.75 cm)"
+    - "Supporting Information mandatory for NMR, X-ray, synthesis details"
+    - "CCDC deposition number required for X-ray crystal structures"
+    - "ORCID required for all authors"
+    - "ACS 1996 ChemDraw settings for chemical structures"
+    - "Preprints on ChemRxiv accepted"
+
+submission:
+  system: "ACS Paragon Plus"
+  url: "https://pubs.acs.org/page/jacsat/submission/index.html"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract ≤200 words"
+    - "TOC graphic required (8.5 × 4.75 cm, 300 dpi)"
+    - "Experimental Section required (not 'Methods')"
+    - "Supporting Information required for full synthetic/analytical data"
+    - "Communications: ≤6 printed pages"
+    - "ORCID required for all authors"
+  content_rules:
+    - "Fundamental chemistry research of broad interest"
+    - "Complete characterization of new compounds required"
+    - "NMR, HRMS, X-ray data required as appropriate"
+    - "Statistical significance reported for biological assays"
+  compliance_rules:
+    - "CCDC number required for all X-ray crystal structures"
+    - "NMR spectra deposited in SI"
+    - "ORCID required for all authors"
+    - "ChemDraw using ACS 1996 settings for all structures"
+    - "TOC graphic is mandatory"
+  language_rules:
+    - "Use 'Experimental Section' not 'Methods'"
+    - "Compound characterization data in standard format"
+    - "TOC graphic must be visually clear and engaging"

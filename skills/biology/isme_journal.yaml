@@ -1,0 +1,139 @@
+journal:
+  name: "The ISME Journal"
+  abbreviation: "ISME J."
+  publisher: "Nature Portfolio / International Society for Microbial Ecology"
+  url: "https://www.nature.com/ismej/for-authors"
+  issn: "1751-7362"
+  impact_factor: 10.8
+  open_access: false
+  discipline: ["microbiology", "microbial_ecology", "environmental_microbiology", "metagenomics", "microbiome"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Premier journal for microbial ecology research. Covers ecology, evolution,
+    physiology and genomics of microorganisms in all environments including
+    marine, terrestrial, and host-associated systems. Metagenomics, microbiome
+    research, and microbial interactions are core topics.
+  keywords:
+    - "microbial ecology"
+    - "metagenomics"
+    - "microbiome"
+    - "microbial diversity"
+    - "marine microbiology"
+    - "soil microbiology"
+    - "gut microbiome"
+    - "microbial interactions"
+    - "environmental genomics"
+    - "microbial evolution"
+
+article_types:
+  - type: "Article"
+    word_limit: 5000
+    word_limit_scope: "main text"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: null
+    references_max: 70
+    pages_max: null
+
+  - type: "Brief Communication"
+    word_limit: 2000
+    word_limit_scope: "main text"
+    abstract_limit: 100
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 3
+    tables_max: null
+    references_max: 30
+    pages_max: null
+
+  - type: "Review"
+    word_limit: 6000
+    word_limit_scope: "main text"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: null
+    references_max: 120
+    pages_max: null
+    notes: "Mostly invited; contact editors before submitting"
+
+format:
+  template: "nature_style"
+  latex_template_url: null
+  word_template_url: "https://www.nature.com/ismej/for-authors"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Nature"
+  keywords_required: false
+  keywords_count: null
+
+sections:
+  required: ["Abstract", "Introduction", "Materials and Methods", "Results", "Discussion"]
+  optional: ["Acknowledgements", "Conflict of Interest", "Supplementary Information"]
+  order: ["Abstract", "Introduction", "Materials and Methods", "Results", "Discussion"]
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "TIFF", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Conflict of interest"
+    - "Author contributions"
+    - "Data availability"
+    - "Accession numbers for sequence data"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: true
+  cover_letter: "optional"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: []
+  additional:
+    - "16S/ITS amplicon data: deposited in SRA/ENA/DDBJ with accession numbers"
+    - "Metagenome-assembled genomes (MAGs): NCBI/ENA deposition required"
+    - "CheckM completeness/contamination required for MAGs"
+    - "16S rRNA gene taxonomy: version of database used must be stated"
+    - "Statistical methods for alpha/beta diversity must be described"
+    - "OTU/ASV clustering method and threshold required"
+    - "Rarefaction or normalization strategy must be stated"
+
+submission:
+  system: "custom"
+  url: "https://mts-ismej.nature.com"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract ≤200 words"
+    - "Articles: main text ≤5000 words"
+    - "Maximum 6 display items"
+    - "References ≤70"
+    - "Sequence accession numbers required"
+  content_rules:
+    - "Microbial ecology focus required"
+    - "Amplicon studies: sufficient sequencing depth and replication"
+    - "MAGs: CheckM quality statistics required"
+    - "Diversity analyses: alpha and beta diversity with statistics"
+    - "Ecological interpretation required beyond description"
+  compliance_rules:
+    - "All sequence data deposited with accession numbers"
+    - "MAG quality (CheckM) statistics required"
+    - "Competing interests required"
+    - "ORCID required"
+  language_rules:
+    - "16S/metagenomics methods must specify database versions"
+    - "OTU/ASV method and threshold explicitly stated"
+    - "Statistical methods for community ecology analyses defined"

@@ -1,0 +1,150 @@
+journal:
+  name: "Nature Physics"
+  abbreviation: "Nat. Phys."
+  publisher: "Springer Nature"
+  url: "https://www.nature.com/nphys/for-authors"
+  issn: "1745-2473"
+  impact_factor: 19.7
+  open_access: false
+  discipline: ["physics", "condensed_matter", "quantum_physics", "astrophysics", "biophysics", "optics", "photonics"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Publishes outstanding research across all areas of physics. Seeks work that is
+    a major advance within a discipline or crosses disciplinary boundaries. Papers
+    must be significant, scientifically rigorous, and accessible to physicists
+    outside the immediate sub-field.
+  keywords:
+    - "condensed matter"
+    - "quantum physics"
+    - "quantum computing"
+    - "topological materials"
+    - "photonics"
+    - "biophysics"
+    - "astrophysics"
+    - "particle physics"
+    - "soft matter"
+    - "complex systems"
+
+article_types:
+  - type: "Article"
+    word_limit: 3000
+    word_limit_scope: "main text excluding abstract, methods, references"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: null
+    references_max: 50
+    pages_max: null
+    notes: "For comprehensive studies with extensive experimental/theoretical content"
+
+  - type: "Letter"
+    word_limit: 1500
+    word_limit_scope: "main text"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 4
+    tables_max: null
+    references_max: 30
+    pages_max: null
+    notes: "For concise, focused results"
+
+  - type: "Review"
+    word_limit: 5000
+    word_limit_scope: "main text"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 8
+    tables_max: null
+    references_max: 150
+    pages_max: null
+    notes: "Usually invited"
+
+  - type: "Perspective"
+    word_limit: 2000
+    word_limit_scope: "main text"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: 2
+    tables_max: null
+    references_max: 30
+    pages_max: null
+    notes: "Usually invited"
+
+format:
+  template: "nature_style"
+  latex_template_url: null
+  word_template_url: "https://www.nature.com/nphys/for-authors"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Nature"
+  keywords_required: false
+  keywords_count: null
+
+sections:
+  required: ["Abstract", "Introduction", "Results", "Methods"]
+  optional: ["Discussion", "Extended Data", "Supplementary Information"]
+  order: ["Abstract", "Introduction", "Results", "Discussion", "Methods"]
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "AI", "TIFF"]
+  color_policy: "free"
+  graphical_abstract: false
+  notes: "arXiv preprint simultaneous submission strongly encouraged"
+
+checklist:
+  declarations_required:
+    - "Competing interests"
+    - "Author contributions"
+    - "Data availability"
+    - "Code availability"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: true
+  cover_letter: "optional"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: []
+  additional:
+    - "arXiv preprint encouraged at submission"
+    - "Data and code availability statements required"
+    - "Extended Data figures allowed"
+    - "ORCID required"
+
+submission:
+  system: "custom"
+  url: "https://mts-nphys.nature.com"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract ≤150 words"
+    - "Articles: main text ≤3000 words"
+    - "Letters: main text ≤1500 words"
+    - "Maximum 6 figures for Articles, 4 for Letters"
+    - "Methods section required"
+  content_rules:
+    - "Major advance in physics or crossing disciplinary boundaries"
+    - "Must be accessible to physicists outside the sub-field"
+    - "Both theoretical and experimental papers accepted"
+    - "Predictions must be testable or already verified"
+  compliance_rules:
+    - "Competing interests required"
+    - "Data availability required"
+    - "ORCID required"
+    - "arXiv preprint encouraged"
+  language_rules:
+    - "Abstract must be readable by all physicists"
+    - "Technical details in Methods or Extended Data"
+    - "Write for cross-disciplinary physics audience"

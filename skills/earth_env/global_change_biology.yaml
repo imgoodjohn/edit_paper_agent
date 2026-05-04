@@ -1,0 +1,146 @@
+journal:
+  name: "Global Change Biology"
+  abbreviation: "Glob. Change Biol."
+  publisher: "Wiley"
+  url: "https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html"
+  issn: "1365-2486"
+  impact_factor: 10.8
+  open_access: false
+  discipline: ["ecology", "climate_change", "biodiversity", "environmental_science", "biogeography"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Covers biological consequences of global change including climate change,
+    land use change, invasive species, atmospheric change, and other human impacts.
+    Interdisciplinary research on how global change affects ecosystems, species,
+    and biodiversity at local to global scales.
+  keywords:
+    - "climate change impacts"
+    - "biodiversity"
+    - "species distribution"
+    - "ecosystem responses"
+    - "phenology"
+    - "carbon cycling"
+    - "land use change"
+    - "range shifts"
+    - "extinction"
+    - "global warming"
+
+article_types:
+  - type: "Primary Research Article"
+    word_limit: 8000
+    word_limit_scope: "main text including tables and figure legends"
+    abstract_limit: 350
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 8
+    tables_max: 8
+    references_max: 100
+    pages_max: null
+    notes: >
+      8000 words including everything except references.
+      Maximum 8 figures OR tables combined.
+      Supporting Information allowed.
+
+  - type: "Review and Synthesis"
+    word_limit: 8000
+    word_limit_scope: "total text"
+    abstract_limit: 350
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 8
+    tables_max: 8
+    references_max: 200
+    pages_max: null
+
+  - type: "Research Letter"
+    word_limit: 3000
+    word_limit_scope: "main text"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 3
+    tables_max: 3
+    references_max: 30
+    pages_max: null
+
+format:
+  template: "wiley_style"
+  latex_template_url: null
+  word_template_url: "https://onlinelibrary.wiley.com/page/journal/13652486/homepage/forauthors.html"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "author-year"
+  reference_format: "GCB_style"
+  keywords_required: true
+  keywords_count: "6-10"
+  notes: >
+    Author-year references (Smith et al., 2023).
+    6-10 keywords required.
+    Word limit includes tables and figure legends.
+
+sections:
+  required: ["Abstract", "Introduction", "Materials and Methods", "Results", "Discussion"]
+  optional: ["Acknowledgments", "Conflict of Interest", "Supporting Information"]
+  order: ["Abstract", "Introduction", "Materials and Methods", "Results", "Discussion"]
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["TIFF", "EPS", "PDF"]
+  color_policy: "free_online"
+  graphical_abstract: false
+  notes: "Color figures free online; grayscale only in print (check policy)"
+
+checklist:
+  declarations_required:
+    - "Conflict of interest"
+    - "Data availability statement"
+    - "Author contributions"
+    - "Funding"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: true
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: []
+  additional:
+    - "6-10 keywords required"
+    - "ORCID required for all authors"
+    - "Data deposited in Dryad, Zenodo, or field-appropriate repository"
+    - "Code deposited in GitHub/Zenodo"
+    - "Word limit INCLUDES tables and figure legends"
+
+submission:
+  system: "ScholarOne"
+  url: "https://mc.manuscriptcentral.com/gcb"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract ≤350 words"
+    - "6-10 keywords required"
+    - "Word limit (8000) INCLUDES tables and figure legends"
+    - "Maximum 8 display items (figures + tables combined)"
+    - "Author-year citation style"
+    - "ORCID required for all authors"
+  content_rules:
+    - "Must demonstrate connection to global change drivers"
+    - "Broad geographic or taxonomic scope valued"
+    - "Meta-analyses and syntheses highly valued"
+    - "Statistical robustness expected"
+  compliance_rules:
+    - "Data deposited in public repository"
+    - "Code deposited publicly"
+    - "Data availability statement required"
+    - "ORCID required"
+    - "Competing interests required"
+  language_rules:
+    - "Abstract: conservation/policy implications encouraged"
+    - "Author-year reference style (Smith et al., 2023)"
+    - "Count words carefully (includes legends)"

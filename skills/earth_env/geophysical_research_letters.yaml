@@ -1,0 +1,128 @@
+journal:
+  name: "Geophysical Research Letters"
+  abbreviation: "GRL"
+  publisher: "American Geophysical Union (AGU) / Wiley"
+  url: "https://agupubs.onlinelibrary.wiley.com/hub/journal/19448007/author-guidelines"
+  issn: "1944-8007"
+  impact_factor: 5.2
+  open_access: false
+  discipline: ["geophysics", "earth_science", "atmospheric_science", "oceanography", "space_science", "climate"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    High-impact letters journal of the AGU. Publishes concise, high-impact advances
+    in all fields of Earth and space sciences. Known for rapid publication and broad
+    scope. Letters must be concise, significant, and of broad interest to the AGU
+    community. Strict word and figure limits.
+  keywords:
+    - "geophysics"
+    - "Earth science"
+    - "atmospheric science"
+    - "space weather"
+    - "climate"
+    - "oceanography"
+    - "seismology"
+    - "hydrology"
+    - "glaciology"
+    - "biogeochemistry"
+
+article_types:
+  - type: "Letter"
+    word_limit: 4000
+    word_limit_scope: "main text including abstract but excluding references and acknowledgments"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 4
+    tables_max: 2
+    references_max: null
+    pages_max: null
+    notes: >
+      STRICT: 4000-word limit, 4 figures/tables total (figures + tables combined).
+      Plain Language Summary (150 words) required in addition to abstract.
+      Plain Language Summary is indexed separately.
+
+format:
+  template: "agu_style"
+  latex_template_url: "https://www.agu.org/Publish-with-AGU/Publish/Author-Resources/Text-and-Data-Formatting"
+  word_template_url: "https://www.agu.org/Publish-with-AGU/Publish/Author-Resources/Text-and-Data-Formatting"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "author-year"
+  reference_format: "AGU"
+  keywords_required: true
+  keywords_count: "up to 6 index terms from AGU index"
+  notes: >
+    AGU index terms required (up to 6).
+    Author-year citation style.
+    Plain Language Summary required (max 150 words, for general public).
+    Supporting Information allowed.
+
+sections:
+  required: ["Abstract", "Plain Language Summary", "Introduction", "Data and Methods", "Results", "Discussion", "Conclusions"]
+  optional: ["Supporting Information", "Acknowledgments"]
+  order: ["Abstract", "Plain Language Summary", "Introduction", "Data and Methods", "Results", "Discussion", "Conclusions"]
+  notes: >
+    Plain Language Summary required (150 words max, written for general public).
+    Section called 'Data and Methods' (not just 'Methods').
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["TIFF", "EPS", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Conflict of interest"
+    - "Funding (Open Research)"
+    - "Data availability statement"
+    - "Author contributions"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: true
+  cover_letter: "optional"
+  ai_use_disclosure: false
+  data_availability: true
+  reporting_guidelines: []
+  additional:
+    - "Plain Language Summary REQUIRED (≤150 words for general public)"
+    - "AGU index terms required (up to 6)"
+    - "Data deposited in appropriate repository (PANGAEA, NOAA, NCAR, etc.)"
+    - "Open Research section required (replaces Acknowledgments)"
+    - "ORCID required for all authors"
+    - "4000-word limit STRICT (editors enforce)"
+
+submission:
+  system: "GEMS (AGU)"
+  url: "https://submit.agu.org"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Strict 4000-word limit (including abstract, excluding references)"
+    - "Maximum 4 display items (figures + tables combined, strict)"
+    - "Plain Language Summary REQUIRED: ≤150 words for general public"
+    - "Abstract ≤150 words"
+    - "Up to 6 AGU index terms required"
+    - "Open Research section required for data/funding"
+    - "ORCID required for all authors"
+  content_rules:
+    - "Significant advance of broad interest to AGU community"
+    - "Concise presentation essential"
+    - "Data analysis must be rigorous and transparent"
+    - "Statistical methods appropriate for geoscience data"
+  compliance_rules:
+    - "Data deposited in domain repository"
+    - "Data availability statement in Open Research section"
+    - "Conflict of interest declaration"
+    - "ORCID required for all authors"
+  language_rules:
+    - "Plain Language Summary: no jargon, for general educated public"
+    - "AGU index terms from standard AGU index"
+    - "Concise: strict word limit enforced by editors"

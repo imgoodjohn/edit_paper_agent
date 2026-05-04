@@ -1,0 +1,156 @@
+journal:
+  name: "Journal of Machine Learning Research"
+  abbreviation: "JMLR"
+  publisher: "JMLR Inc. (open access)"
+  url: "https://www.jmlr.org/author-info.html"
+  issn: "1532-4435"
+  impact_factor: 5.4
+  open_access: true
+  discipline: ["machine_learning", "statistics", "AI", "computer_science", "optimization", "deep_learning"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Open-access journal publishing peer-reviewed research on all aspects of machine
+    learning. Covers theory, algorithms, and applications. Strong emphasis on rigorous
+    theoretical analysis and thorough empirical evaluation. No page fees. One of the
+    most prestigious ML venues alongside NeurIPS/ICML.
+  keywords:
+    - "machine learning"
+    - "statistical learning theory"
+    - "deep learning"
+    - "optimization"
+    - "reinforcement learning"
+    - "probabilistic models"
+    - "kernel methods"
+    - "neural networks"
+    - "generalization theory"
+    - "Bayesian methods"
+
+article_types:
+  - type: "Research Paper"
+    word_limit: null
+    word_limit_scope: "no limit; thorough treatment expected"
+    abstract_limit: null
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: >
+      No page limit. Exhaustive treatment expected.
+      Typical range: 20–60 pages in JMLR style.
+      No publication fees.
+
+  - type: "Technical Note"
+    word_limit: null
+    word_limit_scope: "brief focused contribution"
+    abstract_limit: null
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+
+  - type: "Special Topics (MLOSS)"
+    word_limit: null
+    word_limit_scope: "software description with experiments"
+    abstract_limit: null
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: >
+      Machine Learning Open Source Software (MLOSS) track.
+      Software must be open-source and publicly available.
+      Reviews focus on ML software packages.
+
+format:
+  template: "jmlr_style"
+  latex_template_url: "https://www.jmlr.org/format/format.html"
+  word_template_url: null
+  font: "Computer Modern"
+  font_size: 11
+  spacing: "single"
+  columns: 1
+  reference_style: "author-year"
+  reference_format: "JMLR"
+  keywords_required: true
+  keywords_count: "several"
+  notes: >
+    LaTeX ONLY (jmlr2e.sty style file required).
+    Word NOT accepted. Single-column, single-spaced.
+    Author-year citations (Vapnik, 1998).
+    Keywords required.
+
+sections:
+  required: ["Abstract", "Introduction"]
+  optional: ["Appendix", "Acknowledgments"]
+  order: ["Abstract", "Introduction", "main_sections", "Conclusion", "Acknowledgments", "References", "Appendix"]
+  notes: >
+    Proofs of secondary results may go in appendix.
+    Appendix published as supplemental material.
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+  notes: "Vector graphics required (EPS/PDF). No bitmap for plots."
+
+checklist:
+  declarations_required:
+    - "Editor conflict of interest (editor handling must not have conflict)"
+    - "Acknowledgments"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: false
+  cover_letter: "optional"
+  ai_use_disclosure: false
+  data_availability: false
+  reporting_guidelines: []
+  additional:
+    - "LaTeX ONLY (jmlr2e.sty required)"
+    - "No page fees"
+    - "No submission fees"
+    - "Code encouraged but not required"
+    - "arXiv preprint recommended (simultaneous submission fine)"
+    - "MLOSS: code must be licensed open-source (FOSS license)"
+    - "Reviewers are active ML researchers (volunteer)"
+    - "Conference-to-journal extension: must contain significant new content"
+
+submission:
+  system: "custom"
+  url: "https://jmlr.org/papers/submit.html"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "LaTeX required (jmlr2e.sty); Word not accepted"
+    - "No page limit; thorough treatment expected (typically 20-60 pages)"
+    - "Keywords required"
+    - "Author-year citation style (e.g., Vapnik, 1998)"
+    - "Single-column single-spaced JMLR format"
+    - "Appendix for secondary proofs/results"
+  content_rules:
+    - "Rigorous theoretical analysis and/or thorough empirical evaluation"
+    - "Novelty relative to prior work must be clearly stated"
+    - "Proofs must be complete (or complete in appendix)"
+    - "Experiments must include strong baselines and statistical tests"
+    - "Conference extension: significant new content required"
+  compliance_rules:
+    - "No publication fees"
+    - "Code encouraged; MLOSS track requires open-source license"
+    - "arXiv simultaneous submission recommended"
+    - "Editor must declare conflict of interest"
+  language_rules:
+    - "Notation section recommended for symbol-heavy papers"
+    - "Theorems formally stated and numbered"
+    - "Proofs complete in main text or appendix (not just sketched)"
+    - "Related work must be comprehensive"

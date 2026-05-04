@@ -1,0 +1,126 @@
+journal:
+  name: "Physical Review Letters"
+  abbreviation: "PRL"
+  publisher: "American Physical Society"
+  url: "https://journals.aps.org/prl/authors"
+  issn: "0031-9007"
+  impact_factor: 8.1
+  open_access: false
+  discipline: ["physics", "condensed_matter", "particle_physics", "optics", "quantum_physics", "astrophysics"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Premier rapid-communication journal for significant advances across all physics.
+    Publishes letters reporting important new research results that are of interest
+    to physicists in all subfields. Brevity and broad significance are key criteria.
+    Papers must be compelling and accessible to non-specialist physicists.
+  keywords:
+    - "physics"
+    - "condensed matter"
+    - "quantum mechanics"
+    - "particle physics"
+    - "astrophysics"
+    - "optics"
+    - "quantum computing"
+    - "topological phases"
+    - "fundamental physics"
+
+article_types:
+  - type: "Letter"
+    word_limit: 3500
+    word_limit_scope: "total including abstract and references"
+    abstract_limit: 600
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 4
+    tables_max: 2
+    references_max: null
+    pages_max: 4
+    notes: >
+      4 published pages maximum (strict). ~3500 words including all.
+      Abstract ≤600 characters (not words) - very short.
+      Focus: one key result, compelling physics significance.
+
+format:
+  template: "aps_revtex"
+  latex_template_url: "https://journals.aps.org/revtex"
+  word_template_url: null
+  font: null
+  font_size: 10
+  spacing: "single"
+  columns: 2
+  reference_style: "numbered"
+  reference_format: "APS"
+  keywords_required: false
+  keywords_count: null
+  notes: >
+    REVTeX 4.2 LaTeX class required. Word NOT recommended.
+    Two-column single-spaced. 4-page limit is strict.
+    Abstract: ≤600 characters (very short telegraphic style).
+
+sections:
+  required: ["Abstract"]
+  optional: ["Introduction", "Results", "Discussion", "Conclusions", "Supplemental Material"]
+  order: ["Abstract", "text_sections", "References", "Supplemental Material"]
+  notes: >
+    Traditional PRL format may not have formal section headings for very short letters.
+    Supplemental Material allowed for additional data (not counted in 4 pages).
+
+figures:
+  min_resolution_dpi: 600
+  preferred_formats: ["EPS", "PDF", "PostScript"]
+  color_policy: "free_online"
+  graphical_abstract: false
+  notes: >
+    High resolution required. Vector graphics preferred.
+    Figures count toward 4-page limit.
+
+checklist:
+  declarations_required:
+    - "Conflict of interest (if applicable)"
+    - "Funding acknowledgment"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: false
+  cover_letter: "optional"
+  ai_use_disclosure: false
+  data_availability: false
+  reporting_guidelines: []
+  additional:
+    - "4-page limit strictly enforced"
+    - "Supplemental Material allowed (not counted in page limit)"
+    - "REVTeX 4.2 required"
+    - "Preprints on arXiv expected (submit simultaneously)"
+    - "Abstract: ≤600 characters (very concise)"
+    - "Must be of broad interest to physics community, not just specialists"
+
+submission:
+  system: "custom"
+  url: "https://submit.aps.org"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Strict 4-page limit (all content included)"
+    - "Abstract ≤600 characters (not words)"
+    - "Maximum 4 figures"
+    - "REVTeX 4.2 LaTeX format required"
+    - "Two-column single-spaced format"
+    - "Supplemental Material separate (not counted in page limit)"
+  content_rules:
+    - "Must present one clear, significant physics result"
+    - "Broad interest to physics community required (not just subfield)"
+    - "Novelty and significance must be immediately clear"
+    - "Concise writing essential due to strict page limit"
+  compliance_rules:
+    - "Funding acknowledgment required"
+    - "arXiv preprint simultaneous submission expected"
+    - "APS copyright transfer at acceptance"
+  language_rules:
+    - "Telegraphic abstract (≤600 characters) - very brief"
+    - "Write for physicist readers outside your subfield"
+    - "One key message per letter"
+    - "No jargon without definition"

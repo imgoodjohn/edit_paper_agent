@@ -1,0 +1,171 @@
+journal:
+  name: "Angewandte Chemie International Edition"
+  abbreviation: "Angew. Chem. Int. Ed."
+  publisher: "Wiley-VCH / German Chemical Society (GDCh)"
+  url: "https://www.wiley.com/en-us/network/publishing/research-publishing/submit-to-a-wiley-journal/angewandte-chemie-instructions-for-authors"
+  issn: "1521-3773"
+  impact_factor: 16.1
+  open_access: false
+  discipline: ["chemistry", "organic_chemistry", "inorganic_chemistry", "physical_chemistry", "biochemistry", "materials_chemistry"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    One of the most-cited chemistry journals worldwide. Covers all areas of
+    chemistry with emphasis on outstanding research of broad general interest.
+    Publishes Communications (letters), Research Articles, and Reviews. High bar
+    for novelty and broad chemical significance.
+  keywords:
+    - "organic chemistry"
+    - "catalysis"
+    - "supramolecular chemistry"
+    - "organometallics"
+    - "nanochemistry"
+    - "biochemistry"
+    - "materials"
+    - "photochemistry"
+    - "electrochemistry"
+    - "chemical synthesis"
+
+article_types:
+  - type: "Communication"
+    word_limit: 2500
+    word_limit_scope: "main text (typically 5 pages published)"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: 5
+    tables_max: 2
+    references_max: 30
+    pages_max: 5
+    notes: >
+      No abstract; starts with bold introductory paragraph.
+      5-page limit in journal format. Most submitted as Communications.
+      Angewandte Essay for broad audience overview (max 1500 words).
+
+  - type: "Research Article"
+    word_limit: null
+    word_limit_scope: "comprehensive; no strict limit"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Full article for comprehensive studies"
+
+  - type: "Review"
+    word_limit: null
+    word_limit_scope: "comprehensive; invited"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: 300
+    pages_max: null
+    notes: "Invited Minireviews (≤15 pages) and Reviews"
+
+  - type: "Minireview"
+    word_limit: null
+    word_limit_scope: "≤15 published pages"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: 100
+    pages_max: 15
+    notes: "Usually invited; focused review on specific topic"
+
+format:
+  template: "angewandte_style"
+  latex_template_url: "https://onlinelibrary.wiley.com/journal/15213773"
+  word_template_url: "https://onlinelibrary.wiley.com/journal/15213773"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered_brackets"
+  reference_format: "Angewandte"
+  keywords_required: true
+  keywords_count: "5"
+  notes: >
+    5 keywords required. Abstract in German also required for some article types.
+    Communications: no abstract; bold introductory sentence instead.
+    Scheme figures common for reaction schemes.
+    ChemDraw required for structures.
+
+sections:
+  required: ["Introduction", "Results and Discussion", "Conclusion", "Experimental Section"]
+  optional: ["Abstract", "Supporting Information", "Acknowledgements"]
+  order: ["Abstract", "Introduction", "Results and Discussion", "Conclusion", "Experimental Section"]
+  notes: >
+    Communications: no formal abstract section; bold introductory paragraph instead.
+    Research Articles: abstract required.
+    'Experimental Section' not 'Methods'.
+
+figures:
+  min_resolution_dpi: 600
+  preferred_formats: ["TIFF", "EPS", "PDF"]
+  color_policy: "free_online"
+  graphical_abstract: false
+  notes: >
+    Table of Contents graphic (TOC) required for Communications.
+    ChemDraw for chemical structures.
+    Schemes numbered separately from Figures.
+
+checklist:
+  declarations_required:
+    - "Conflict of interest"
+    - "Funding (Acknowledgements section)"
+    - "Author contributions"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: true
+  cover_letter: "required"
+  ai_use_disclosure: false
+  data_availability: false
+  reporting_guidelines: []
+  additional:
+    - "5 keywords required"
+    - "TOC graphic required (Communications)"
+    - "CCDC deposition for crystal structures"
+    - "Supporting Information with full experimental data"
+    - "NMR spectra in SI"
+    - "ChemDraw format for all chemical structures"
+    - "Bold introductory paragraph replaces abstract in Communications"
+
+submission:
+  system: "Editorial Manager"
+  url: "https://www.editorialmanager.com/anie"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "5 keywords required"
+    - "Communications: NO abstract section; bold introductory paragraph instead"
+    - "Communications: ≤5 published pages, ≤5 figures, ≤30 references"
+    - "TOC graphic required for Communications"
+    - "Experimental Section (not Methods)"
+    - "Schemes numbered separately from Figures"
+    - "ORCID required for all authors"
+  content_rules:
+    - "Broad chemical significance required (not narrow specialist interest)"
+    - "Outstanding novelty in chemistry"
+    - "Full synthetic/analytical characterization required"
+    - "Reaction scope and limitations must be explored"
+  compliance_rules:
+    - "CCDC number for crystal structures"
+    - "NMR data in Supporting Information"
+    - "ChemDraw for structures"
+    - "Competing interests declaration"
+    - "ORCID required"
+  language_rules:
+    - "Communications: first sentence bold, serves as abstract replacement"
+    - "Schemes numbered independently of Figures"
+    - "Compound numbers in bold (1, 2, 3...)"
+    - "Keywords representative of paper content (5 required)"

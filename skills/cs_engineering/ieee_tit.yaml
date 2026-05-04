@@ -1,0 +1,135 @@
+journal:
+  name: "IEEE Transactions on Information Theory"
+  abbreviation: "IEEE TIT"
+  publisher: "IEEE Information Theory Society"
+  url: "https://www.itsoc.org/it-trans/author-info"
+  issn: "0018-9448"
+  impact_factor: 2.5
+  open_access: false
+  discipline: ["information_theory", "coding_theory", "signal_processing", "cryptography", "communications", "mathematics"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Covers transmission, processing, and utilization of information. Includes Shannon
+    theory, coding theory, data compression, sequences, signal processing, detection
+    and estimation, pattern recognition, learning and inference, communications,
+    complexity, cryptography, and quantum information theory. Papers must have
+    strong conceptual or analytical contribution.
+  keywords:
+    - "information theory"
+    - "Shannon theory"
+    - "coding theory"
+    - "data compression"
+    - "channel capacity"
+    - "cryptography"
+    - "signal processing"
+    - "machine learning theory"
+    - "quantum information"
+
+article_types:
+  - type: "Paper"
+    word_limit: null
+    word_limit_scope: "≤50 pages single-column at submission; ≤25 pages two-column final"
+    abstract_limit: 250
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: 50
+    notes: >
+      ≤50 pages single-column IEEE format at submission (from May 2025).
+      Final version ≤25 pages two-column. Exceptions need EiC prior approval.
+      Authors encouraged to post preprints on arXiv at submission time.
+
+  - type: "Correspondence"
+    word_limit: null
+    word_limit_scope: "2 pages two-column"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: 2
+    tables_max: 2
+    references_max: 10
+    pages_max: 2
+
+format:
+  template: "ieee_two_column"
+  latex_template_url: "https://journals.ieeeauthorcenter.ieee.org"
+  word_template_url: "https://journals.ieeeauthorcenter.ieee.org"
+  font: "Times New Roman"
+  font_size: 10
+  spacing: "single"
+  columns: 2
+  reference_style: "numbered"
+  reference_format: "IEEE"
+  keywords_required: true
+  keywords_count: "5-10 index terms"
+  notes: >
+    Abstract: one paragraph, no abbreviations, footnotes, displayed equations,
+    tabular material, or references. List 5-10 index terms after abstract.
+
+sections:
+  required: ["Abstract", "Introduction"]
+  optional: ["Appendix", "Acknowledgments", "Proofs"]
+  order: ["Abstract", "Introduction", "main_sections", "Conclusion", "Appendix", "References"]
+  notes: >
+    Section structure is flexible for theoretical papers.
+    Proofs may go in appendix for readability.
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "PDF"]
+  color_policy: "free_online"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Conflict of interest"
+    - "Funding"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: false
+  cover_letter: "optional"
+  ai_use_disclosure: true
+  data_availability: false
+  reporting_guidelines: []
+  additional:
+    - "Preprint on arXiv strongly encouraged at submission time"
+    - "Rejection-without-review disclosure required if previously rejected"
+    - "Conference paper basis: must note in first-page footnote"
+    - "Parallel ISIT conference submission allowed before TIT acceptance"
+    - "Cryptography submissions: must relate to information/coding theory or be outstanding"
+
+submission:
+  system: "Author Portal"
+  url: "https://ieee.atyponrex.com/journal/t-it"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract ≤250 words, one paragraph, no equations/abbreviations/references"
+    - "5-10 IEEE index terms required"
+    - "≤50 pages single-column at initial submission"
+    - "Final version ≤25 pages two-column"
+    - "Proofs may be placed in appendix"
+  content_rules:
+    - "Strong conceptual or analytical contribution required"
+    - "Cryptography: must relate to information/coding theory unless outstanding"
+    - "Sequences: must be outstanding contributions"
+    - "Theorems must be rigorously proven"
+    - "Connections to existing literature must be established"
+  compliance_rules:
+    - "Disclose if previously rejected by TIT (3-year ban if not disclosed)"
+    - "Conference version footnote required on first page"
+    - "Cannot submit to another journal after TIT submission (until rejected or withdrawn)"
+    - "ISIT parallel submission allowed before TIT acceptance"
+    - "Preprint deposit on arXiv recommended"
+    - "AI use disclosure required"
+  language_rules:
+    - "Abstract: self-contained, no math symbols or abbreviations"
+    - "Theorems, lemmas, propositions clearly labeled and numbered"
+    - "Notation section recommended for symbol-heavy papers"

@@ -1,0 +1,155 @@
+journal:
+  name: "Genome Biology"
+  abbreviation: "Genome Biol."
+  publisher: "BioMed Central / Springer Nature"
+  url: "https://genomebiology.biomedcentral.com/submission-guidelines"
+  issn: "1474-760X"
+  impact_factor: 10.1
+  open_access: true
+  discipline: ["genomics", "genetics", "bioinformatics", "epigenomics", "transcriptomics", "biology"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Premier open-access journal covering research on the structure, function,
+    evolution, and mapping of genomes. Emphasizes genomics, bioinformatics,
+    functional genomics, and epigenomics. Publishes research with broad
+    relevance to the genomics field.
+  keywords:
+    - "genomics"
+    - "epigenomics"
+    - "transcriptomics"
+    - "single-cell sequencing"
+    - "genome assembly"
+    - "GWAS"
+    - "bioinformatics"
+    - "chromatin"
+    - "RNA-seq"
+    - "metagenomics"
+
+article_types:
+  - type: "Research"
+    word_limit: null
+    word_limit_scope: "no strict limit; comprehensive reporting"
+    abstract_limit: 350
+    abstract_type: "structured"
+    abstract_sections: ["Background", "Results", "Conclusions"]
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+
+  - type: "Method"
+    word_limit: null
+    word_limit_scope: "comprehensive"
+    abstract_limit: 350
+    abstract_type: "structured"
+    abstract_sections: ["Background", "Results", "Conclusions"]
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "New computational or experimental method"
+
+  - type: "Software"
+    word_limit: null
+    word_limit_scope: "brief"
+    abstract_limit: 200
+    abstract_type: "structured"
+    abstract_sections: ["Background", "Results", "Conclusions"]
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+
+  - type: "Review"
+    word_limit: null
+    word_limit_scope: "comprehensive"
+    abstract_limit: 350
+    abstract_type: "structured"
+    abstract_sections: ["Background", "Results", "Conclusions"]
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+
+format:
+  template: "bmc_style"
+  latex_template_url: "https://genomebiology.biomedcentral.com/submission-guidelines/preparing-your-manuscript"
+  word_template_url: "https://genomebiology.biomedcentral.com"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Vancouver"
+  keywords_required: true
+  keywords_count: "3-10"
+
+sections:
+  required: ["Abstract", "Background", "Results", "Discussion", "Conclusions", "Methods"]
+  optional: ["Supplementary material", "Availability of data and materials"]
+  order: ["Abstract", "Background", "Results", "Discussion", "Conclusions", "Methods"]
+  notes: >
+    BMC-style sections: Introduction is called 'Background'.
+    Methods can appear at end or as separate section.
+    'Availability of data and materials' required as separate section.
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["TIFF", "EPS", "PDF", "PNG"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Ethics approval and consent to participate"
+    - "Consent for publication"
+    - "Availability of data and materials"
+    - "Competing interests"
+    - "Funding"
+    - "Author contributions"
+    - "Acknowledgements"
+  ethics_statement: true
+  clinical_trial_registration: false
+  orcid_required: true
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["ARRIVE", "CONSORT", "MIAME", "MINSEQE"]
+  additional:
+    - "Data and code must be deposited in public repositories"
+    - "Accession numbers required for sequence data (GEO, SRA, ArrayExpress)"
+    - "ORCID required for all authors"
+    - "APC charged for open access"
+
+submission:
+  system: "Editorial Manager"
+  url: "https://www.editorialmanager.com/genbiol"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "open"
+  apc: "approximately $3490 USD"
+
+agents:
+  structure_rules:
+    - "Structured abstract: Background/Results/Conclusions (≤350 words)"
+    - "Introduction section called 'Background' in BMC style"
+    - "Availability of data and materials: required separate section"
+    - "All accession numbers must be provided"
+    - "Keywords: 3-10 required"
+  content_rules:
+    - "Genomic data must be properly normalized and QC'd"
+    - "Bioinformatics methods must be fully described and available"
+    - "Novel methods must be benchmarked against existing tools"
+    - "MIAME/MINSEQE standards for array/sequencing data"
+  compliance_rules:
+    - "Ethics approval required (human/animal studies)"
+    - "Consent to participate required for human studies"
+    - "Sequence data deposited in GEO/SRA/ArrayExpress"
+    - "Code deposited in GitHub/Zenodo"
+    - "All authors ORCID required"
+  language_rules:
+    - "Use 'Background' not 'Introduction'"
+    - "Data availability must specify exact repository and accession numbers"
+    - "Methods must be fully reproducible"

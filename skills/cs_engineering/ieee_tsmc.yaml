@@ -1,0 +1,120 @@
+journal:
+  name: "IEEE Transactions on Systems, Man, and Cybernetics: Systems"
+  abbreviation: "IEEE TSMC"
+  publisher: "IEEE Systems, Man, and Cybernetics Society"
+  url: "https://www.ieeesmc.org/publications/transactions-on-smc-systems"
+  issn: "2168-2216"
+  impact_factor: 8.7
+  open_access: false
+  discipline: ["systems_engineering", "human_factors", "cybernetics", "AI", "robotics", "control_systems"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Covers research on integrated systems of humans, machines, organizations,
+    and environments. Includes systems theory and engineering, human-machine
+    systems, AI, cybernetics, and computational intelligence. Interdisciplinary
+    approach combining technical rigor with human/societal considerations.
+  keywords:
+    - "systems engineering"
+    - "human-machine systems"
+    - "cybernetics"
+    - "artificial intelligence"
+    - "robotics"
+    - "decision support"
+    - "intelligent systems"
+    - "control systems"
+    - "optimization"
+    - "multi-agent systems"
+
+article_types:
+  - type: "Regular Paper"
+    word_limit: null
+    word_limit_scope: "page-based: 10 pages two-column IEEE"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: 10
+    notes: "10-page limit in IEEE two-column format. Overlength charges apply."
+
+  - type: "Brief Paper"
+    word_limit: null
+    word_limit_scope: "4 pages two-column"
+    abstract_limit: 100
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: 4
+
+format:
+  template: "ieee_two_column"
+  latex_template_url: "https://journals.ieeeauthorcenter.ieee.org"
+  word_template_url: "https://journals.ieeeauthorcenter.ieee.org"
+  font: "Times New Roman"
+  font_size: 10
+  spacing: "single"
+  columns: 2
+  reference_style: "numbered"
+  reference_format: "IEEE"
+  keywords_required: true
+  keywords_count: "4-5 index terms"
+
+sections:
+  required: ["Abstract", "Introduction", "Methodology", "Results", "Conclusion"]
+  optional: ["Appendix", "Acknowledgments"]
+  order: ["Abstract", "Introduction", "Methodology", "Results", "Conclusion"]
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "PDF", "TIFF"]
+  color_policy: "free_online"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Conflict of interest"
+    - "Funding"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: false
+  cover_letter: "optional"
+  ai_use_disclosure: true
+  data_availability: false
+  reporting_guidelines: []
+  additional:
+    - "10-page limit in IEEE format (strictly enforced)"
+    - "Overlength charges beyond 10 pages"
+    - "Author bios required at acceptance"
+    - "IEEE copyright transfer required"
+    - "4-5 IEEE index terms required"
+
+submission:
+  system: "ScholarOne"
+  url: "https://mc.manuscriptcentral.com/tsmc-systems"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract ≤200 words"
+    - "10-page limit in two-column IEEE format"
+    - "4-5 IEEE index terms required"
+    - "IEEE two-column single-spaced format mandatory"
+  content_rules:
+    - "Integrated systems perspective required"
+    - "Human-machine interaction aspects valued"
+    - "Thorough experimental validation"
+    - "Comparison with state of the art"
+  compliance_rules:
+    - "IEEE copyright transfer at acceptance"
+    - "Conflict of interest disclosure"
+    - "Author bios and photos at acceptance"
+  language_rules:
+    - "Abstract: clearly state system problem and contribution"
+    - "Index terms from IEEE taxonomy"

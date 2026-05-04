@@ -1,0 +1,7 @@
+/.pytest_cache
+/agent_run.log
+/config.json
+/logs
+/uploads
+/sessions
+/exports

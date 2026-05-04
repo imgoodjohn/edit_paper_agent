@@ -1,0 +1,135 @@
+journal:
+  name: "Nature Geoscience"
+  abbreviation: "Nat. Geosci."
+  publisher: "Springer Nature"
+  url: "https://www.nature.com/ngeo/for-authors"
+  issn: "1752-0894"
+  impact_factor: 18.3
+  open_access: false
+  discipline: ["geoscience", "earth_science", "oceanography", "atmospheric_science", "geology", "geochemistry", "paleoclimate"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Publishes outstanding research across the Earth sciences, including solid Earth,
+    ocean, atmosphere, and climate. Seeks work that is a major advance within a
+    sub-discipline or crosses Earth science boundaries. Strong emphasis on global
+    implications and Earth system understanding.
+  keywords:
+    - "earth science"
+    - "climate"
+    - "oceanography"
+    - "geology"
+    - "geochemistry"
+    - "atmospheric science"
+    - "paleoclimate"
+    - "geophysics"
+    - "volcanology"
+    - "hydrology"
+
+article_types:
+  - type: "Article"
+    word_limit: 3000
+    word_limit_scope: "main text"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: null
+    references_max: 50
+    pages_max: null
+
+  - type: "Letter"
+    word_limit: 1500
+    word_limit_scope: "main text"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 4
+    tables_max: null
+    references_max: 30
+    pages_max: null
+
+  - type: "Review"
+    word_limit: 5000
+    word_limit_scope: "main text"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 8
+    tables_max: null
+    references_max: 150
+    pages_max: null
+    notes: "Usually invited"
+
+format:
+  template: "nature_style"
+  latex_template_url: null
+  word_template_url: "https://www.nature.com/ngeo/for-authors"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Nature"
+  keywords_required: false
+  keywords_count: null
+
+sections:
+  required: ["Abstract", "Introduction", "Results", "Methods"]
+  optional: ["Discussion", "Extended Data", "Supplementary Information"]
+  order: ["Abstract", "Introduction", "Results", "Discussion", "Methods"]
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "AI", "TIFF"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Competing interests"
+    - "Author contributions"
+    - "Data availability"
+    - "Code availability"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: true
+  cover_letter: "optional"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: []
+  additional:
+    - "Data deposited in PANGAEA, NOAA, or field-appropriate repositories"
+    - "Climate model data: CMIP-compatible format preferred"
+    - "Isotope/geochemical data: EarthChem deposition"
+    - "arXiv/ESSOAr preprints accepted"
+    - "Supplementary Information for detailed datasets"
+
+submission:
+  system: "custom"
+  url: "https://mts-ngeo.nature.com"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract ≤150 words"
+    - "Articles: main text ≤3000 words"
+    - "Letters: main text ≤1500 words"
+    - "Maximum 6 figures for Articles"
+    - "Methods required"
+  content_rules:
+    - "Major advance in Earth/geosciences"
+    - "Global implications preferred over local/regional"
+    - "Multi-proxy or multi-method evidence valued"
+    - "Quantitative analysis required"
+  compliance_rules:
+    - "Data deposited in field-appropriate repository"
+    - "Geochemical data: EarthChem or PANGAEA"
+    - "Competing interests required"
+    - "ORCID required"
+  language_rules:
+    - "Write for broad Earth science audience"
+    - "Technical details in Methods or Extended Data"

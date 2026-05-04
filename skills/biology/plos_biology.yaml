@@ -1,0 +1,127 @@
+journal:
+  name: "PLOS Biology"
+  abbreviation: "PLoS Biol."
+  publisher: "Public Library of Science"
+  url: "https://journals.plos.org/plosbiology/s/submission-guidelines"
+  issn: "1544-9173"
+  impact_factor: 9.8
+  open_access: true
+  discipline: ["biology", "cell_biology", "molecular_biology", "ecology", "evolutionary_biology", "neuroscience"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Open-access flagship biology journal for outstanding research with broad
+    significance across all biological disciplines. Higher bar than PLOS ONE;
+    papers must represent a major step forward in their field.
+  keywords:
+    - "cell biology"
+    - "molecular biology"
+    - "genetics"
+    - "ecology"
+    - "evolutionary biology"
+    - "neuroscience"
+    - "structural biology"
+    - "physiology"
+
+article_types:
+  - type: "Research Article"
+    word_limit: null
+    word_limit_scope: "no strict limit; typically 4000-7000 words"
+    abstract_limit: 300
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+
+  - type: "Short Report"
+    word_limit: 2500
+    word_limit_scope: "main text"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 4
+    tables_max: null
+    references_max: null
+    pages_max: null
+
+  - type: "Methods and Resources"
+    word_limit: null
+    word_limit_scope: "comprehensive"
+    abstract_limit: 300
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+
+format:
+  template: "plos_style"
+  latex_template_url: "https://journals.plos.org/plosbiology/s/latex"
+  word_template_url: "https://journals.plos.org/plosbiology"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered_brackets"
+  reference_format: "PLOS"
+  keywords_required: false
+  keywords_count: null
+
+sections:
+  required: ["Abstract", "Introduction", "Results", "Discussion", "Materials and Methods"]
+  optional: ["Supporting Information"]
+  order: ["Abstract", "Introduction", "Results", "Discussion", "Materials and Methods"]
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["TIFF", "EPS", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Competing interests"
+    - "Author contributions"
+    - "Data availability"
+    - "Funding"
+  ethics_statement: true
+  clinical_trial_registration: false
+  orcid_required: false
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["ARRIVE", "STROBE"]
+  additional:
+    - "Must represent major step forward in field (higher bar than PLOS ONE)"
+    - "Data deposited in public repositories"
+    - "Broad significance across biology required"
+    - "APC required (lower than Nature journals)"
+
+submission:
+  system: "custom"
+  url: "https://journals.plos.org/plosbiology/s/submit-now"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract ≤300 words"
+    - "References in [1] bracket format (not superscripts)"
+    - "DOIs required in all references"
+    - "Double-spaced with line numbers"
+  content_rules:
+    - "Major step forward in field required (higher than PLOS ONE)"
+    - "Broad significance across biology required"
+    - "Methods must ensure reproducibility"
+  compliance_rules:
+    - "Ethics approval for human/animal studies"
+    - "Data availability in public repositories"
+    - "Competing interests required"
+  language_rules:
+    - "PLOS bracket reference style [1], not superscripts"
+    - "Abstract clear for non-specialist biologists"

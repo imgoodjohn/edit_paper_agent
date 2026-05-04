@@ -1,0 +1,145 @@
+journal:
+  name: "Artificial Intelligence"
+  abbreviation: "AIJ"
+  publisher: "Elsevier"
+  url: "https://www.sciencedirect.com/journal/artificial-intelligence/about/author-instructions"
+  issn: "0004-3702"
+  impact_factor: 14.4
+  open_access: false
+  discipline: ["artificial_intelligence", "machine_learning", "reasoning", "planning", "knowledge_representation", "NLP", "computer_vision"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    One of the oldest and most prestigious AI journals. Covers all aspects of AI
+    including search, planning, knowledge representation, reasoning, natural language
+    processing, machine learning, vision, robotics, and foundations. Emphasizes
+    breadth of AI rather than narrow subfield specialization.
+  keywords:
+    - "artificial intelligence"
+    - "automated reasoning"
+    - "knowledge representation"
+    - "planning"
+    - "machine learning"
+    - "natural language processing"
+    - "constraint satisfaction"
+    - "heuristic search"
+    - "multiagent systems"
+    - "cognitive systems"
+
+article_types:
+  - type: "Research Paper"
+    word_limit: null
+    word_limit_scope: "no strict limit; comprehensive treatment"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "No page limit. Comprehensive coverage expected. Typical 25-50 pages."
+
+  - type: "Research Note"
+    word_limit: null
+    word_limit_scope: "brief; ≤6000 words"
+    abstract_limit: 100
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Focused contribution without full paper scope"
+
+  - type: "Review"
+    word_limit: null
+    word_limit_scope: "comprehensive"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Usually invited"
+
+format:
+  template: "elsevier_style"
+  latex_template_url: "https://www.elsevier.com/authors/policies-and-guidelines/latex-instructions"
+  word_template_url: "https://www.elsevier.com/authors/author-resources"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Elsevier_numbered"
+  keywords_required: true
+  keywords_count: "4-6"
+  notes: >
+    Elsevier LaTeX or Word template. Double-spaced for review.
+    Keywords: 4-6, general AI terms.
+    Line numbers required for review.
+
+sections:
+  required: ["Abstract", "Introduction"]
+  optional: ["Conclusion", "Appendix", "Acknowledgments"]
+  order: ["Abstract", "Introduction", "main_sections", "Conclusion", "References"]
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "PDF", "TIFF"]
+  color_policy: "free_online"
+  graphical_abstract: true
+  graphical_abstract_specs: "Elsevier graphical abstract: 1:1 ratio, ≤ 265 x 265 mm"
+  notes: "Graphical abstract optional but encouraged for Elsevier journals"
+
+checklist:
+  declarations_required:
+    - "Declaration of competing interests (Elsevier CRediT)"
+    - "Funding statement"
+    - "Author contributions (CRediT taxonomy)"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: false
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: false
+  reporting_guidelines: []
+  additional:
+    - "Highlights required (3-5 bullets, 85 chars each)"
+    - "Graphical abstract optional but recommended"
+    - "Elsevier AI policy: AI tools must be disclosed"
+    - "AI tools cannot be listed as author"
+    - "Keywords: 4-6, relevant to broad AI community"
+    - "Code availability strongly encouraged"
+
+submission:
+  system: "Editorial Manager"
+  url: "https://www.editorialmanager.com/artint"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract ≤200 words"
+    - "Highlights: 3-5 bullet points, ≤85 characters each"
+    - "4-6 keywords required"
+    - "Double-spaced with line numbers for review"
+    - "Elsevier LaTeX/Word template required"
+    - "No strict page limit; comprehensive treatment"
+  content_rules:
+    - "Significant contribution to AI (not just narrow ML application)"
+    - "Related work relative to broad AI community, not just one subfield"
+    - "Theoretical contributions need rigorous proofs"
+    - "Empirical claims need thorough experimental evaluation"
+  compliance_rules:
+    - "Competing interests (Elsevier form)"
+    - "CRediT author contributions required"
+    - "AI tools disclosed; cannot be author"
+    - "Elsevier copyright or open access at acceptance"
+  language_rules:
+    - "Highlights: punchy present-tense discoveries"
+    - "Abstract accessible to broad AI audience"
+    - "Technical terms defined for cross-AI-subfield readers"

@@ -1,0 +1,136 @@
+journal:
+  name: "PLOS ONE"
+  abbreviation: "PLoS ONE"
+  publisher: "Public Library of Science (PLOS)"
+  url: "https://journals.plos.org/plosone/s/submission-guidelines"
+  issn: "1932-6203"
+  impact_factor: 2.9
+  open_access: true
+  discipline: ["multidisciplinary", "biology", "medicine", "chemistry", "physics", "social_science", "engineering", "computer_science"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Open-access mega-journal evaluating scientific rigor and technical soundness,
+    not perceived importance or novelty. Accepts any discipline. Negative results,
+    replication studies, and datasets all within scope.
+  keywords:
+    - "technically sound"
+    - "methodologically rigorous"
+    - "any discipline"
+    - "negative results"
+    - "replication"
+    - "open data"
+
+article_types:
+  - type: "Research Article"
+    word_limit: null
+    word_limit_scope: "no limit; concise writing encouraged"
+    abstract_limit: 300
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: >
+      No explicit word, figure, or page limits. Typical range 3000-7000 words.
+      Unlimited Supporting Information. Monographs not considered.
+
+format:
+  template: "plos_style"
+  latex_template_url: "https://journals.plos.org/plosone/s/latex"
+  word_template_url: "https://journals.plos.org/plosone/s/submission-guidelines"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered_brackets"
+  reference_format: "PLOS"
+  keywords_required: false
+  keywords_count: null
+  notes: >
+    References use [1] brackets, NOT superscripts.
+    DOIs required in references when available.
+    LaTeX: use PLOS ONE template and BibTeX style sheet.
+    MS Word with equations: must follow special equation guidelines.
+    Text footnotes not supported; move to main text or references.
+
+sections:
+  required: ["Abstract", "Introduction", "Materials and Methods", "Results", "Discussion"]
+  optional: ["Supporting Information", "Acknowledgments"]
+  order: ["Abstract", "Introduction", "Materials and Methods", "Results", "Discussion"]
+  notes: >
+    PLOS ONE uses specific section ordering (Methods before Results for some fields).
+    All appropriate section headings must be present.
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["TIFF", "EPS", "PDF", "PNG"]
+  color_policy: "free"
+  graphical_abstract: false
+  notes: >
+    Figures cited in ascending numeric order.
+    Captions inserted after first citing paragraph.
+    Google-generated images not accepted.
+
+checklist:
+  declarations_required:
+    - "Competing interests declaration"
+    - "Author contributions"
+    - "Data availability statement (mandatory - must specify where data can be accessed)"
+    - "Funding statement"
+  ethics_statement: true
+  clinical_trial_registration: true
+  orcid_required: false
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["CONSORT", "STROBE", "PRISMA", "ARRIVE", "EQUATOR"]
+  additional:
+    - "Data Availability Statement is strictly enforced - data must be deposited in public repository"
+    - "Reporting checklists must be uploaded as supporting files"
+    - "Cell line origin must be stated"
+    - "New taxon names must follow nomenclature guidelines"
+    - "Cover letter should NOT request fee waivers (done after acceptance)"
+    - "All authors must approve manuscript before submission (email confirmation sent)"
+    - "No duplicate submission allowed"
+    - "Preprints on bioRxiv/arXiv accepted"
+
+submission:
+  system: "custom"
+  url: "https://journals.plos.org/plosone/s/submit-now"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+  apc: "$2382 USD"
+  notes: "APC waiver available; do not mention in cover letter"
+
+agents:
+  structure_rules:
+    - "Abstract must not exceed 300 words, no section headers"
+    - "No word limit; encourage concise scientific writing"
+    - "Monographs not considered"
+    - "Manuscript must be double-spaced with line and page numbers"
+    - "References use [1] bracket format, not superscripts"
+    - "DOIs required in all references where available"
+    - "No text footnotes (move to main text or references)"
+    - "Required sections: Introduction, Materials and Methods, Results, Discussion"
+  content_rules:
+    - "Scientific validity and rigor are the acceptance criteria, not novelty"
+    - "Negative or null results acceptable if methods are sound"
+    - "Replication studies are within scope"
+    - "Experiments must have appropriate controls and replication"
+  compliance_rules:
+    - "Data availability statement mandatory; data must be in public repository"
+    - "Appropriate reporting checklist must be completed and uploaded"
+    - "Ethics statement required for human/animal research"
+    - "Cell line origin must be stated in methods"
+    - "Clinical trials must be registered"
+    - "Competing interests declaration required"
+    - "All authors must have approved submission"
+  language_rules:
+    - "Double-spaced manuscript required"
+    - "Line numbers and page numbers required"
+    - "References in PLOS format with brackets, not superscripts"
+    - "No abbreviation sections; define at first use"

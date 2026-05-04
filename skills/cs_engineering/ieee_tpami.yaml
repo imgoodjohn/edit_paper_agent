@@ -1,0 +1,139 @@
+journal:
+  name: "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+  abbreviation: "IEEE TPAMI"
+  publisher: "IEEE Computer Society"
+  url: "https://www.computer.org/csdl/journal/tp"
+  issn: "0162-8828"
+  impact_factor: 20.8
+  open_access: false
+  discipline: ["computer_science", "machine_learning", "computer_vision", "pattern_recognition", "AI"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Premier journal for computer vision, machine learning, pattern recognition, and AI.
+    Publishes algorithms, systems, and applications for analysis and understanding of
+    patterns in data. Highest impact CS/AI journal. Expects significant theoretical
+    and/or empirical contributions with thorough evaluation.
+  keywords:
+    - "computer vision"
+    - "machine learning"
+    - "deep learning"
+    - "pattern recognition"
+    - "image processing"
+    - "neural networks"
+    - "object detection"
+    - "natural language processing"
+    - "artificial intelligence"
+    - "robotics"
+
+article_types:
+  - type: "Regular Paper"
+    word_limit: null
+    word_limit_scope: "page-based: 14 pages at submission (10-point font, two-column)"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: 14
+    notes: >
+      Papers exceeding 14 pages at submission will be returned without review.
+      Revised papers may exceed 14 pages if recommended by reviewers.
+      8 published pages expected; overlength charges after 12 pages.
+
+  - type: "Comment"
+    word_limit: null
+    word_limit_scope: "page-based: 2 pages two-column"
+    abstract_limit: 100
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 2
+    tables_max: 2
+    references_max: 10
+    pages_max: 2
+
+format:
+  template: "ieee_two_column"
+  latex_template_url: "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/"
+  word_template_url: "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/"
+  font: "Times New Roman"
+  font_size: 10
+  spacing: "single"
+  columns: 2
+  reference_style: "numbered"
+  reference_format: "IEEE"
+  keywords_required: true
+  keywords_count: "4-5 index terms"
+  notes: >
+    Double-column, single-spaced, 10-point font. IEEE format mandatory.
+    Submit as PDF converted from Word or LaTeX template.
+    LaTeX strongly recommended for math-heavy papers.
+
+sections:
+  required: ["Abstract", "Introduction", "Related Work", "Method", "Experiments", "Conclusion"]
+  optional: ["Appendix", "Acknowledgments"]
+  order: ["Abstract", "Introduction", "Related Work", "Method", "Experiments", "Conclusion"]
+  notes: "Index terms required. Author bios and photos required for accepted papers."
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "PDF", "TIFF", "PNG"]
+  color_policy: "free_online"
+  graphical_abstract: false
+  notes: "Vector graphics preferred. Check figure readability in grayscale."
+
+checklist:
+  declarations_required:
+    - "Conflict of interest"
+    - "Funding acknowledgment"
+    - "Author contributions (optional)"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: false
+  cover_letter: "optional"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: []
+  additional:
+    - "Overlength charges: $250/page over 12 published pages (2024)"
+    - "Author bios and photos required at acceptance"
+    - "LaTeX template strongly recommended"
+    - "Concurrent conference submission disclosure required"
+    - "Previously published conference paper: must have ≥30% new material"
+    - "IEEE copyright transfer form required at acceptance"
+
+submission:
+  system: "ScholarOne"
+  url: "https://mc.manuscriptcentral.com/tpami-cs"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract ≤200 words"
+    - "Paper ≤14 pages at submission (two-column, 10pt, IEEE format)"
+    - "Papers exceeding 14 pages returned without review"
+    - "4-5 IEEE index terms required"
+    - "Two-column single-spaced IEEE format mandatory"
+    - "All figures and tables embedded in manuscript"
+  content_rules:
+    - "Must present significant theoretical or empirical contributions"
+    - "Experiments must be thorough with strong baselines"
+    - "Ablation studies expected for deep learning papers"
+    - "Comparison with state-of-the-art methods required"
+    - "Statistical significance reporting expected"
+    - "Code/model availability strongly encouraged"
+  compliance_rules:
+    - "IEEE copyright transfer required at acceptance"
+    - "Overlength page charges apply beyond 12 published pages"
+    - "Disclosure required if based on conference paper (≥30% new material)"
+    - "Simultaneous conference disclosure required"
+    - "AI tool use disclosure required"
+  language_rules:
+    - "Abstract: informative summary including key results"
+    - "Index terms from IEEE taxonomy"
+    - "Author bios in third-person, ≈100 words each"
+    - "Figure captions should be self-contained"

@@ -1,0 +1,146 @@
+journal:
+  name: "Nature Chemistry"
+  abbreviation: "Nat. Chem."
+  publisher: "Springer Nature"
+  url: "https://www.nature.com/nchem/for-authors"
+  issn: "1755-4330"
+  impact_factor: 21.7
+  open_access: false
+  discipline: ["chemistry", "organic_chemistry", "inorganic_chemistry", "physical_chemistry", "materials", "chemical_biology"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Publishes the most significant research across all chemistry disciplines.
+    Seeks work that represents a major advance, reports genuinely new chemistry,
+    and is relevant to chemists across multiple sub-disciplines. High bar for novelty
+    and impact within chemistry.
+  keywords:
+    - "organic synthesis"
+    - "catalysis"
+    - "supramolecular chemistry"
+    - "chemical biology"
+    - "materials chemistry"
+    - "physical chemistry"
+    - "nanotechnology"
+    - "reaction mechanism"
+    - "drug discovery"
+    - "polymer chemistry"
+
+article_types:
+  - type: "Article"
+    word_limit: 3000
+    word_limit_scope: "main text excluding abstract, methods, references"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: null
+    references_max: 50
+    pages_max: null
+    notes: "Chemical structures drawn with ChemDraw required"
+
+  - type: "Letter"
+    word_limit: 1500
+    word_limit_scope: "main text"
+    abstract_limit: 100
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 4
+    tables_max: null
+    references_max: 20
+    pages_max: null
+
+  - type: "Review Article"
+    word_limit: 5000
+    word_limit_scope: "main text"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 8
+    tables_max: null
+    references_max: 150
+    pages_max: null
+    notes: "Usually invited"
+
+format:
+  template: "nature_style"
+  latex_template_url: null
+  word_template_url: "https://www.nature.com/nchem/for-authors"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Nature"
+  keywords_required: false
+  keywords_count: null
+  notes: >
+    Chemical structures must be drawn with ChemDraw using Nature Chemistry template.
+    Compounds numbered in order of appearance in main text.
+
+sections:
+  required: ["Abstract", "Introduction", "Results and Discussion", "Methods"]
+  optional: ["Conclusions", "Supplementary Information"]
+  order: ["Abstract", "Introduction", "Results and Discussion", "Methods"]
+  notes: >
+    Results and Discussion often combined in chemistry papers.
+    Methods section highly detailed for synthesis.
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "AI", "TIFF"]
+  color_policy: "free"
+  graphical_abstract: false
+  notes: >
+    ChemDraw template required for chemical structures.
+    Color figures free online. Standard buffers not numbered.
+    Compounds numbered by appearance in main text.
+    Alphanumeric numbering (1a, 1b...) acceptable.
+
+checklist:
+  declarations_required:
+    - "Competing interests"
+    - "Author contributions"
+    - "Data availability"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: true
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: []
+  additional:
+    - "ChemDraw file and template required for chemical structures"
+    - "Springer Nature chemistry style guide must be followed"
+    - "Preprint on ChemRxiv accepted"
+    - "Life Sciences Reporting Summary if biological assays included"
+
+submission:
+  system: "custom"
+  url: "https://mts-nchem.nature.com"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract ≤150 words"
+    - "Articles: main text ≤3000 words"
+    - "Maximum 6 display items"
+    - "Chemical structures drawn with ChemDraw using journal template"
+    - "Compounds numbered in order of appearance"
+  content_rules:
+    - "Major advance in chemistry with broad relevance"
+    - "New chemistry genuinely reported (not incremental)"
+    - "Synthetic routes must be reproducible"
+    - "Mechanism proposals must be supported by evidence"
+  compliance_rules:
+    - "ChemDraw template for all chemical structures"
+    - "Springer Nature chemistry style guide compliance"
+    - "Data availability statement required"
+    - "Competing interests required"
+  language_rules:
+    - "Compounds numbered sequentially in main text"
+    - "Standard reagents not numbered"
+    - "Crystal structures: CCDC deposition number required"

@@ -1,0 +1,129 @@
+journal:
+  name: "Scientific Reports"
+  abbreviation: "Sci. Rep."
+  publisher: "Springer Nature"
+  url: "https://www.nature.com/srep/author-instructions/submission-guidelines"
+  issn: "2045-2322"
+  impact_factor: 3.8
+  open_access: true
+  discipline: ["multidisciplinary", "biology", "chemistry", "physics", "clinical", "engineering"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Open-access mega-journal publishing primary research across natural sciences,
+    clinical sciences, and engineering. Evaluates papers for methodological soundness
+    and scientific validity rather than perceived novelty. Similar to PLOS ONE in
+    editorial philosophy but with Nature brand.
+  keywords:
+    - "technically sound"
+    - "reproducible"
+    - "rigorous methodology"
+    - "all natural sciences"
+    - "clinical research"
+    - "engineering"
+    - "negative results"
+
+article_types:
+  - type: "Article"
+    word_limit: 4500
+    word_limit_scope: "main text excluding abstract, methods, references, figure legends"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: 60
+    pages_max: null
+    notes: >
+      Main text ≤4500 words. Methods has no word limit.
+      References typically 30-50; up to 60 acceptable.
+      Use 6 keywords (up to 6).
+
+format:
+  template: "nature_style"
+  latex_template_url: "https://www.overleaf.com/latex/templates/scientific-reports"
+  word_template_url: null
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Nature"
+  keywords_required: true
+  keywords_count: "up to 6"
+  title_max_words: 20
+  notes: >
+    LaTeX: use wlscirep.cls template or standard 'Article' class.
+    Use numerical references only; system cannot accept .bib files directly
+    (include .bbl file for LaTeX submissions).
+
+sections:
+  required: ["Abstract", "Introduction", "Results", "Discussion", "Methods"]
+  optional: ["Supplementary Information"]
+  order: ["Abstract", "Introduction", "Results", "Discussion", "Methods"]
+  notes: >
+    Standard IMRAD. Both IMRD and IRDM (Methods before Results) accepted.
+    Methods section has no word limit.
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "AI", "TIFF", "JPEG", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+  notes: >
+    Vector graphics preferred for line art.
+    Photographic images: TIFF/JPEG/PSD.
+    Figures labeled sequentially with Arabic numerals.
+
+checklist:
+  declarations_required:
+    - "Author contributions (CRediT taxonomy accepted)"
+    - "Competing interests declaration"
+    - "Data availability statement"
+    - "Ethics approval (if applicable)"
+  ethics_statement: true
+  clinical_trial_registration: true
+  orcid_required: true
+  cover_letter: "optional"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["CONSORT", "STROBE", "PRISMA", "ARRIVE"]
+  additional:
+    - "ORCID required for corresponding author"
+    - "LLMs cannot be listed as authors; must be documented in Methods"
+    - "Reporting checklists required (CONSORT/STROBE/PRISMA/ARRIVE as appropriate)"
+
+submission:
+  system: "custom"
+  url: "https://mts-srep.nature.com"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Title must not exceed 20 words"
+    - "Abstract must not exceed 200 words, no references"
+    - "Main text (excluding methods/abstract/refs/legends) ≤4500 words"
+    - "Keywords: up to 6 required"
+    - "All required IMRAD sections must be present"
+    - "References ≤60 (30-50 typical)"
+  content_rules:
+    - "Methodological soundness is primary criterion, not novelty"
+    - "Negative or null results acceptable if methodology sound"
+    - "Reproducibility: sufficient experimental detail required"
+    - "Standard protocols must be cited, not described in full"
+  compliance_rules:
+    - "Author contributions required"
+    - "Competing interests required"
+    - "ORCID required for corresponding author"
+    - "Data availability statement required"
+    - "Ethics approval required for human/animal research"
+    - "Appropriate reporting checklist must be uploaded"
+    - "AI/LLM use must be documented in Methods, cannot be listed as author"
+  language_rules:
+    - "Title: single scientifically accurate sentence, no puns or idioms"
+    - "Abstract: general introduction + non-technical summary of results"
+    - "Methods: sufficient detail for replication"
+    - "Avoid abbreviation sections; define abbreviations at first use"

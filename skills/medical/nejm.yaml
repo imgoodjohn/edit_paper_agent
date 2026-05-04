@@ -1,0 +1,180 @@
+journal:
+  name: "The New England Journal of Medicine"
+  abbreviation: "NEJM"
+  publisher: "Massachusetts Medical Society"
+  url: "https://www.nejm.org/author-center/new-manuscripts"
+  issn: "0028-4793"
+  impact_factor: 96.2
+  open_access: false
+  discipline: ["medicine", "clinical_research", "public_health", "pharmacology"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    The world's leading general medical journal. Publishes original research, review
+    articles, and clinical practice content of highest quality and broad clinical
+    significance. Seeks work that is influential and changes clinical practice.
+    Most review articles and editorials are solicited.
+  keywords:
+    - "clinical medicine"
+    - "randomized controlled trial"
+    - "clinical practice"
+    - "public health"
+    - "pharmacology"
+    - "medical breakthrough"
+    - "evidence-based medicine"
+
+article_types:
+  - type: "Original Article"
+    word_limit: 2700
+    word_limit_scope: "main text (Introduction through Discussion)"
+    abstract_limit: 250
+    abstract_type: "structured"
+    abstract_sections: ["Background", "Methods", "Results", "Conclusions"]
+    figures_max: 4
+    tables_max: 4
+    references_max: 70
+    pages_max: null
+    notes: >
+      2700 words for main text. Abstract 250 words structured.
+      4 figures/tables. Up to 70 references. Methods may be in supplementary.
+
+  - type: "Brief Report"
+    word_limit: 1500
+    word_limit_scope: "main text"
+    abstract_limit: 100
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 2
+    tables_max: 2
+    references_max: 20
+    pages_max: null
+
+  - type: "Review Article"
+    word_limit: 3500
+    word_limit_scope: "main text"
+    abstract_limit: 250
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 4
+    tables_max: 4
+    references_max: 80
+    pages_max: null
+    notes: "Usually solicited"
+
+  - type: "Clinical Practice"
+    word_limit: 2700
+    word_limit_scope: "main text"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: 3
+    tables_max: 3
+    references_max: 30
+    pages_max: null
+    notes: "Usually solicited; clinical management guidance"
+
+  - type: "Case Report"
+    word_limit: 800
+    word_limit_scope: "total"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: 2
+    tables_max: 2
+    references_max: 10
+    pages_max: null
+
+format:
+  template: "nejm_style"
+  latex_template_url: null
+  word_template_url: "https://www.nejm.org/author-center/new-manuscripts"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Vancouver"
+  keywords_required: false
+  keywords_count: null
+  notes: >
+    Compile all text, references, legends, and tables into single double-spaced file.
+    Word or .rtf preferred. References numbered consecutively as cited.
+
+sections:
+  required: ["Abstract", "Introduction", "Methods", "Results", "Discussion"]
+  optional: ["Supplementary Appendix"]
+  order: ["Abstract", "Introduction", "Methods", "Results", "Discussion"]
+  notes: "Structured abstract with Background/Methods/Results/Conclusions"
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["AI", "EPS", "SVG", "TIFF"]
+  color_policy: "free"
+  graphical_abstract: false
+  notes: >
+    Data visualizations: submit editable vector files (ai, eps, svg).
+    Medical illustrations created by NEJM illustrators post-acceptance.
+    Do not submit finished illustrations; copyright issues possible.
+
+checklist:
+  declarations_required:
+    - "Conflict of interest disclosure (all authors)"
+    - "Funding sources"
+    - "Author contributions"
+    - "Data sharing statement"
+    - "IRB/ethics approval"
+  ethics_statement: true
+  clinical_trial_registration: true
+  orcid_required: true
+  cover_letter: "optional"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["CONSORT", "STROBE", "PRISMA"]
+  additional:
+    - "Clinical trials must be registered BEFORE first patient enrollment"
+    - "ICMJE authorship criteria must be met"
+    - "Patient written informed consent required for identifiable patient images"
+    - "Do NOT discuss submission with colleagues or journalists"
+    - "Preprints on nonprofit servers accepted; notify NEJM"
+    - "Rapid Review available (3-day initial decision)"
+    - "ORCID required for corresponding author"
+
+submission:
+  system: "custom"
+  url: "https://www.nejm.org/author-center"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+  notes: >
+    Rapid Review requests available. Editors respond in 3 business days.
+    Authors must not discuss submission with anyone during review.
+
+agents:
+  structure_rules:
+    - "Abstract: exactly 4 structured sections (Background/Methods/Results/Conclusions)"
+    - "Abstract must not exceed 250 words"
+    - "Original Articles: main text ≤2700 words"
+    - "Maximum 4 figures/tables for Original Articles"
+    - "References ≤70 for Original Articles (numbered Vancouver style)"
+    - "All text compiled into single double-spaced Word file"
+  content_rules:
+    - "Must have broad clinical significance, not narrow specialty interest"
+    - "Methods section must be comprehensive and reproducible"
+    - "Statistical methods must include p-values and confidence intervals"
+    - "Randomized trials: CONSORT reporting required"
+    - "Results must directly answer the primary study question"
+  compliance_rules:
+    - "Clinical trial registration BEFORE enrollment is mandatory"
+    - "Conflict of interest disclosure mandatory for all authors"
+    - "ICMJE authorship criteria must be met and stated"
+    - "IRB or ethics committee approval required"
+    - "Patient written consent for identifiable images"
+    - "ORCID required for corresponding author"
+    - "AI use must be disclosed; AI cannot be listed as author"
+    - "Data sharing statement required"
+  language_rules:
+    - "Structured abstract: Background/Methods/Results/Conclusions"
+    - "Precise, unambiguous clinical language"
+    - "Report exact p-values and 95% confidence intervals"
+    - "Methods must enable replication"

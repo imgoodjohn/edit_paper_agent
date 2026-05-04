@@ -1,0 +1,146 @@
+journal:
+  name: "Proceedings of the National Academy of Sciences"
+  abbreviation: "PNAS"
+  publisher: "National Academy of Sciences"
+  url: "https://www.pnas.org/author-center/submitting-your-manuscript"
+  issn: "0027-8424"
+  impact_factor: 11.1
+  open_access: false
+  discipline: ["multidisciplinary", "biology", "chemistry", "physics", "social_science", "earth_science", "mathematics"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    One of the world's most-cited and comprehensive multidisciplinary scientific journals.
+    Publishes research across biological, physical, and social sciences. Standard articles
+    are 6 pages (~4000 words) with up to 12 pages maximum.
+  keywords:
+    - "multidisciplinary"
+    - "high citation"
+    - "rigorous"
+    - "significant contribution"
+    - "broad scientific interest"
+    - "STEM"
+
+article_types:
+  - type: "Regular Article"
+    word_limit: 4000
+    word_limit_scope: "main text (6-page preferred)"
+    abstract_limit: 250
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 4
+    tables_max: 4
+    references_max: 50
+    pages_max: 12
+    notes: >
+      Standard: 6 pages, ~4000 words, 50 refs, 4 medium-size figures/tables.
+      Maximum 12 pages allowed (overlength charges may apply).
+
+  - type: "Letter"
+    word_limit: 1000
+    word_limit_scope: "total"
+    abstract_limit: 120
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 2
+    tables_max: 2
+    references_max: 20
+    pages_max: 2
+
+  - type: "Review"
+    word_limit: 6000
+    word_limit_scope: "main text"
+    abstract_limit: 250
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: 6
+    references_max: 100
+    pages_max: null
+    notes: "Reviews are typically invited"
+
+  - type: "Perspective"
+    word_limit: 3000
+    word_limit_scope: "main text"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: 3
+    tables_max: 3
+    references_max: 50
+    pages_max: null
+
+format:
+  template: "pnas_style"
+  latex_template_url: "https://www.pnas.org/author-center/submitting-your-manuscript"
+  word_template_url: "https://www.pnas.org/author-center/submitting-your-manuscript"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "author-year"
+  reference_format: "PNAS"
+  keywords_required: true
+  keywords_count: "up to 5"
+  notes: "Authors listed as First Name Last Name in reference list (≤5 authors; else et al.)"
+
+sections:
+  required: ["Abstract", "Introduction", "Results", "Discussion", "Materials and Methods"]
+  optional: ["Acknowledgments", "Author Contributions", "Supporting Information"]
+  order: ["Abstract", "Introduction", "Results", "Discussion", "Materials and Methods", "Acknowledgments"]
+  notes: "Author contributions required. SI for additional data/methods."
+
+figures:
+  min_resolution_dpi: 600
+  preferred_formats: ["TIFF", "EPS", "PDF", "JPEG"]
+  color_policy: "free_online"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Author contributions statement"
+    - "Competing interests declaration"
+    - "Data availability statement"
+    - "Funding acknowledgment"
+  ethics_statement: true
+  clinical_trial_registration: true
+  orcid_required: true
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["CONSORT", "ARRIVE"]
+  additional:
+    - "Significance statement required (120 words, for non-specialists)"
+    - "Supporting Information uploaded separately"
+    - "Preprints on bioRxiv/arXiv accepted"
+
+submission:
+  system: "custom"
+  url: "https://www.pnascentral.org"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract must not exceed 250 words"
+    - "Standard article: ~4000 words, 6 pages preferred"
+    - "Maximum page length: 12 pages"
+    - "Up to 4 medium figures/tables for standard article"
+    - "Significance statement: max 120 words, for non-specialist"
+    - "Materials and Methods section required"
+    - "Keywords: up to 5 required"
+  content_rules:
+    - "Research should be of broad scientific interest"
+    - "Results must directly support conclusions"
+    - "Statistical analyses must be described"
+  compliance_rules:
+    - "Author contributions required"
+    - "Competing interests required"
+    - "Significance Statement required for all articles"
+    - "ORCID required"
+    - "Ethics approval for human/animal research"
+  language_rules:
+    - "Significance statement written for non-specialist audience"
+    - "Clear separation of results and interpretation"

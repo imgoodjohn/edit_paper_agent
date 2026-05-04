@@ -1,0 +1,141 @@
+journal:
+  name: "Management Science"
+  abbreviation: "Mgmt. Sci."
+  publisher: "INFORMS"
+  url: "https://pubsonline.informs.org/page/mnsc/submission-guidelines"
+  issn: "0025-1909"
+  impact_factor: 4.9
+  open_access: false
+  discipline: ["management", "operations_research", "economics", "finance", "marketing", "strategy", "information_systems"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Scientific research on management practice. Covers strategy, entrepreneurship,
+    innovation, IT, organizations, and all functional business areas (accounting,
+    finance, marketing, operations). Both theoretical and empirical work accepted.
+    Includes normative and descriptive decision-making perspectives.
+  keywords:
+    - "management"
+    - "operations research"
+    - "strategy"
+    - "finance"
+    - "marketing"
+    - "organizational behavior"
+    - "information systems"
+    - "decision making"
+    - "game theory"
+    - "supply chain"
+
+article_types:
+  - type: "Regular Manuscript"
+    word_limit: null
+    word_limit_scope: "no page limit for initial submission; succinctness expected"
+    abstract_limit: 250
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: >
+      No page limit for first-round submissions.
+      Short papers encouraged; not labeled research notes.
+      Double-spaced 12-point font single-column for review.
+      Double-blind review process.
+
+  - type: "Comment"
+    word_limit: null
+    word_limit_scope: "brief"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Short comments on previously published Management Science papers"
+
+format:
+  template: "double_blind_style"
+  latex_template_url: null
+  word_template_url: null
+  font: null
+  font_size: 12
+  spacing: "double"
+  columns: 1
+  reference_style: "author-year"
+  reference_format: "INFORMS"
+  keywords_required: false
+  keywords_count: null
+  notes: >
+    Double-blind: remove ALL author info from manuscript.
+    12-point font, double-spaced, single column.
+    Page limit is 42 for reviews, 38 for all others in single-column double-space
+    (translates to ~15-17 formatted pages).
+    Submission fee from August 2025.
+
+sections:
+  required: ["Abstract", "Introduction", "Methodology", "Results", "Conclusion"]
+  optional: ["Literature Review", "Discussion", "Appendix"]
+  order: ["Abstract", "Introduction", "Literature Review", "Methodology", "Results", "Discussion", "Conclusion"]
+  notes: >
+    Managerial relevance statement (150-200 words) required as separate section
+    on first submission page for some article types.
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["TIFF", "EPS", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Conflict of interest"
+    - "Funding acknowledgment"
+    - "Data availability (for empirical papers)"
+  ethics_statement: true
+  clinical_trial_registration: false
+  orcid_required: false
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: []
+  additional:
+    - "DOUBLE BLIND: no author names or identifying info in manuscript"
+    - "Submission fee from August 1, 2025 (see journal website)"
+    - "AI use disclosure required; authors take responsibility for accuracy"
+    - "AI tools not permitted by reviewers to protect confidentiality"
+    - "Replication/reproducibility materials encouraged"
+    - "Managerial relevance: papers must be interesting to managers/executives"
+
+submission:
+  system: "ScholarOne"
+  url: "https://mc.manuscriptcentral.com/mnsc"
+  preprint_policy: "case_by_case"
+  double_blind: true
+  review_type: "double_blind"
+
+agents:
+  structure_rules:
+    - "Double-blind: NO author names, affiliations, or identifying info in manuscript"
+    - "12-point font, double-spaced, single column"
+    - "Page limits: reviews ≤42 pages, others ≤38 pages (single-column double-space)"
+    - "Abstract required"
+    - "Managerial relevance must be clear"
+  content_rules:
+    - "Research must address issues important to managers and executives"
+    - "Must be interesting to broad management science community"
+    - "Potential to impact management practice required"
+    - "Theoretical and/or empirical rigor expected"
+    - "Short papers acceptable; not disadvantaged vs. long papers"
+  compliance_rules:
+    - "Double-blind anonymization strictly required"
+    - "AI tools use disclosure required"
+    - "Reviewers must NOT upload manuscripts to AI tools (confidentiality)"
+    - "Submission fee required from August 2025"
+    - "Data availability for empirical studies"
+  language_rules:
+    - "Write for broad management science audience, not just one subdiscipline"
+    - "Define technical terms accessible to non-specialist"
+    - "Avoid pure technical descriptions without managerial relevance"

@@ -1,0 +1,182 @@
+journal:
+  name: "Cell"
+  abbreviation: "Cell"
+  publisher: "Cell Press (Elsevier)"
+  url: "https://www.cell.com/cell/authors"
+  issn: "0092-8674"
+  impact_factor: 45.5
+  open_access: false
+  discipline: ["cell_biology", "molecular_biology", "genetics", "biochemistry", "biology"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Premier journal for exceptional research in cell and molecular biology.
+    Publishes transformative research across all areas of life sciences.
+    Expects comprehensive, mechanistic studies with strong experimental support.
+    Cell Press journals require substantial new insights at multiple levels.
+  keywords:
+    - "cell biology"
+    - "molecular biology"
+    - "mechanistic study"
+    - "genetics"
+    - "biochemistry"
+    - "transformative"
+    - "comprehensive"
+
+article_types:
+  - type: "Article"
+    word_limit: 8000
+    word_limit_scope: "main text"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 8
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: >
+      Up to 8 main figures. Unlimited supplemental figures (STAR★Methods).
+      Long articles typical. Comprehensive mechanistic studies expected.
+
+  - type: "Short Article"
+    word_limit: 4000
+    word_limit_scope: "main text"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 4
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Shorter focused studies with clear, direct message"
+
+  - type: "Resource"
+    word_limit: 6000
+    word_limit_scope: "main text"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Substantial new dataset or computational resource"
+
+  - type: "Review"
+    word_limit: 10000
+    word_limit_scope: "main text"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 8
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Usually invited"
+
+  - type: "Perspective"
+    word_limit: 4000
+    word_limit_scope: "total"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: 3
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Usually invited"
+
+format:
+  template: "cell_press_style"
+  latex_template_url: "https://www.cell.com/cell/authors"
+  word_template_url: "https://www.cell.com/cell/authors"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Cell_Press"
+  keywords_required: true
+  keywords_count: "up to 10"
+  notes: >
+    STAR Methods section required for all Articles (Structured, Transparent,
+    Accessible Reporting). Graphical Abstract required.
+    Key Resources Table required listing all reagents/resources.
+
+sections:
+  required: ["Abstract", "Introduction", "Results", "Discussion", "STAR Methods"]
+  optional: ["Supplemental Information", "Acknowledgments"]
+  order: ["Abstract", "Highlights", "Graphical Abstract", "Introduction", "Results", "Discussion", "STAR Methods"]
+  notes: >
+    Highlights: 4 bullet points (85 characters each) summarizing key findings.
+    Graphical Abstract: visual overview of the study.
+    STAR Methods: complete methods with Key Resources Table.
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["PDF", "EPS", "TIFF"]
+  color_policy: "free"
+  graphical_abstract: true
+  graphical_abstract_specs: "1200x1200 px minimum, TIFF or PDF"
+  notes: >
+    Graphical abstract required. Figures clearly labeled A, B, C...
+    Figure legends should be self-contained.
+
+checklist:
+  declarations_required:
+    - "Author contributions"
+    - "Declaration of interests"
+    - "Data and code availability"
+    - "Acknowledgments"
+  ethics_statement: true
+  clinical_trial_registration: false
+  orcid_required: true
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["ARRIVE"]
+  additional:
+    - "Graphical abstract required"
+    - "Highlights (4 bullets, 85 chars each) required"
+    - "STAR Methods section required (replaces standard Methods)"
+    - "Key Resources Table required in STAR Methods"
+    - "eTOC blurb (~150 words) required"
+    - "Preprints accepted (bioRxiv, arXiv)"
+    - "ORCID required for all authors"
+
+submission:
+  system: "Editorial Manager"
+  url: "https://www.editorialmanager.com/cell"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract ≤150 words"
+    - "Highlights: exactly 4 bullet points, each ≤85 characters"
+    - "Graphical abstract required (1200x1200 px)"
+    - "STAR Methods section required (not standard 'Methods')"
+    - "Key Resources Table required within STAR Methods"
+    - "Keywords: up to 10 required"
+    - "Main Articles: up to 8 main figures"
+    - "eTOC blurb required (~150 words)"
+  content_rules:
+    - "Transformative research with new mechanistic insights"
+    - "Comprehensive experimental support required"
+    - "Multiple lines of evidence expected"
+    - "Figures should tell a clear linear story"
+    - "Supplemental figures unlimited"
+  compliance_rules:
+    - "Declaration of interests required"
+    - "Author contributions required"
+    - "Data and code availability statement required"
+    - "ORCID required for all authors"
+    - "Animal studies: ARRIVE guidelines"
+    - "AI use must be disclosed"
+  language_rules:
+    - "Highlights: short punchy sentences, present-tense discoveries"
+    - "eTOC blurb: brief engaging summary for non-specialists"
+    - "STAR Methods: standardized subsection headers required"
+    - "Graphical abstract must be visually clear without text overload"

@@ -1,0 +1,121 @@
+journal:
+  name: "PRX Quantum"
+  abbreviation: "PRX Quantum"
+  publisher: "American Physical Society"
+  url: "https://journals.aps.org/prxquantum/authors"
+  issn: "2691-3399"
+  impact_factor: 9.7
+  open_access: true
+  discipline: ["quantum_physics", "quantum_computing", "quantum_information", "quantum_optics", "quantum_sensing"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Open-access journal for high-impact research on quantum information science
+    and quantum technologies. Covers quantum computing, quantum communication,
+    quantum sensing, and quantum simulation. Both theoretical and experimental
+    work welcome. Broad significance within quantum science required.
+  keywords:
+    - "quantum computing"
+    - "quantum information"
+    - "quantum error correction"
+    - "quantum communication"
+    - "quantum sensing"
+    - "quantum simulation"
+    - "quantum algorithms"
+    - "quantum hardware"
+    - "entanglement"
+    - "quantum cryptography"
+
+article_types:
+  - type: "Research Article"
+    word_limit: null
+    word_limit_scope: "no strict limit; comprehensive"
+    abstract_limit: 600
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Abstract ≤600 characters (APS style, short)"
+
+  - type: "Letter"
+    word_limit: null
+    word_limit_scope: "concise"
+    abstract_limit: 600
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 4
+    tables_max: null
+    references_max: null
+    pages_max: null
+
+format:
+  template: "aps_revtex"
+  latex_template_url: "https://journals.aps.org/revtex"
+  word_template_url: null
+  font: null
+  font_size: 10
+  spacing: "single"
+  columns: 2
+  reference_style: "numbered"
+  reference_format: "APS"
+  keywords_required: false
+  keywords_count: null
+  notes: "REVTeX 4.2 required. APS two-column format."
+
+sections:
+  required: ["Abstract", "Introduction"]
+  optional: ["Appendix", "Supplemental Material"]
+  order: ["Abstract", "Introduction", "main_sections", "Conclusion", "References"]
+
+figures:
+  min_resolution_dpi: 600
+  preferred_formats: ["EPS", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Competing interests"
+    - "Funding"
+    - "Data availability"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: false
+  cover_letter: "optional"
+  ai_use_disclosure: false
+  data_availability: true
+  reporting_guidelines: []
+  additional:
+    - "arXiv preprint simultaneous submission encouraged"
+    - "Open access (APC required unless waived)"
+    - "Code availability encouraged"
+
+submission:
+  system: "custom"
+  url: "https://submit.aps.org"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+  apc: "$3270 USD (2024)"
+
+agents:
+  structure_rules:
+    - "Abstract ≤600 characters (APS style)"
+    - "REVTeX 4.2 LaTeX required"
+    - "Two-column APS format"
+    - "Supplemental Material allowed (not in main count)"
+  content_rules:
+    - "High-impact research in quantum science"
+    - "Broad significance within quantum information/technology"
+    - "Both theory and experiment welcome"
+    - "Claims must be rigorously proven/demonstrated"
+  compliance_rules:
+    - "APS copyright or CC-BY license"
+    - "Data/code availability encouraged"
+    - "arXiv preprint expected"
+  language_rules:
+    - "Abstract: short telegraphic style (≤600 chars)"
+    - "Accessible to broad quantum science community"

@@ -1,0 +1,147 @@
+journal:
+  name: "PLOS Computational Biology"
+  abbreviation: "PLoS Comput. Biol."
+  publisher: "Public Library of Science"
+  url: "https://journals.plos.org/ploscompbiol/s/submission-guidelines"
+  issn: "1553-7358"
+  impact_factor: 4.3
+  open_access: true
+  discipline: ["computational_biology", "bioinformatics", "systems_biology", "structural_biology", "mathematical_biology", "genomics"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Open-access journal for outstanding research at the interface of computation
+    and biology. Covers bioinformatics, genomics, neuroscience, ecology, evolutionary
+    biology, structural biology, and systems biology. Software tools and databases
+    within scope. Methods must be validated on biological data.
+  keywords:
+    - "bioinformatics"
+    - "computational biology"
+    - "systems biology"
+    - "machine learning biology"
+    - "protein structure"
+    - "molecular dynamics"
+    - "genome analysis"
+    - "network biology"
+    - "evolutionary modeling"
+    - "computational neuroscience"
+
+article_types:
+  - type: "Research Article"
+    word_limit: null
+    word_limit_scope: "no strict limit; concise reporting encouraged"
+    abstract_limit: 300
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+
+  - type: "Software"
+    word_limit: null
+    word_limit_scope: "brief; focuses on tool description and validation"
+    abstract_limit: 300
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Software must be open-source with full code availability"
+
+  - type: "Methods"
+    word_limit: null
+    word_limit_scope: "comprehensive methods paper"
+    abstract_limit: 300
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+
+format:
+  template: "plos_style"
+  latex_template_url: "https://journals.plos.org/ploscompbiol/s/latex"
+  word_template_url: "https://journals.plos.org/ploscompbiol"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered_brackets"
+  reference_format: "PLOS"
+  keywords_required: false
+  keywords_count: null
+
+sections:
+  required: ["Abstract", "Author Summary", "Introduction", "Results", "Discussion", "Materials and Methods"]
+  optional: ["Supporting Information"]
+  order: ["Abstract", "Author Summary", "Introduction", "Results", "Discussion", "Materials and Methods"]
+  notes: >
+    Author Summary required (150-200 words, non-specialist audience).
+    Software articles: include implementation details and availability.
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["TIFF", "EPS", "PDF", "PNG"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Competing interests"
+    - "Author contributions"
+    - "Data availability"
+    - "Software availability"
+    - "Funding"
+  ethics_statement: true
+  clinical_trial_registration: false
+  orcid_required: false
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: []
+  additional:
+    - "Author Summary required: 150–200 words for non-specialist"
+    - "All code and software must be open-source and publicly available"
+    - "GitHub repository or Zenodo deposition required for code"
+    - "Datasets must be deposited in appropriate public repositories"
+    - "Software: must include installation instructions and example data"
+    - "Version number and DOI for all software dependencies"
+    - "Benchmark comparisons expected for new computational methods"
+
+submission:
+  system: "custom"
+  url: "https://journals.plos.org/ploscompbiol/s/submit-now"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+  apc: "$2500 USD (2024)"
+
+agents:
+  structure_rules:
+    - "Author Summary REQUIRED: 150–200 words for non-specialist audience"
+    - "Author Summary placed after abstract"
+    - "Abstract ≤300 words"
+    - "References in [1] bracket format"
+    - "DOIs in all references"
+    - "Double-spaced with line and page numbers"
+  content_rules:
+    - "Computational methods must be validated on biological data"
+    - "Software: open-source code required with documentation"
+    - "Benchmark comparisons against existing tools required"
+    - "Mathematical models must be biologically motivated"
+    - "Reproducibility: all scripts and parameters must be available"
+  compliance_rules:
+    - "Code deposited in public repository (GitHub/Zenodo/Bitbucket)"
+    - "Data deposited in domain-appropriate repository"
+    - "Ethics approval if human/animal data used"
+    - "Software: installation instructions and example datasets"
+    - "Competing interests required"
+  language_rules:
+    - "Author Summary: explain biological question and computational approach"
+    - "Mathematical notation clearly defined"
+    - "Pseudocode or flowcharts for complex algorithms"
+    - "Benchmark results presented with statistical tests"

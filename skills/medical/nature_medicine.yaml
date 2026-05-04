@@ -1,0 +1,134 @@
+journal:
+  name: "Nature Medicine"
+  abbreviation: "Nat. Med."
+  publisher: "Springer Nature"
+  url: "https://www.nature.com/nm/for-authors"
+  issn: "1078-8956"
+  impact_factor: 58.7
+  open_access: false
+  discipline: ["medicine", "clinical_research", "biomedical", "translational_research", "immunology", "oncology"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Publishes research with direct implications for human health and disease.
+    Bridges basic biomedical research and clinical medicine. Covers all areas
+    of biomedicine with a focus on translational and clinical impact. Very high bar
+    for novelty and mechanistic understanding.
+  keywords:
+    - "translational medicine"
+    - "clinical research"
+    - "cancer"
+    - "immunology"
+    - "neuroscience"
+    - "infectious disease"
+    - "genomic medicine"
+    - "drug discovery"
+    - "biomarkers"
+
+article_types:
+  - type: "Article"
+    word_limit: 5000
+    word_limit_scope: "main text excluding abstract, methods, references"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 8
+    tables_max: null
+    references_max: 100
+    pages_max: null
+
+  - type: "Brief Communication"
+    word_limit: 2000
+    word_limit_scope: "main text"
+    abstract_limit: 100
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 3
+    tables_max: null
+    references_max: 30
+    pages_max: null
+
+  - type: "Review"
+    word_limit: 6000
+    word_limit_scope: "main text"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 8
+    tables_max: null
+    references_max: 150
+    pages_max: null
+    notes: "Usually invited"
+
+format:
+  template: "nature_style"
+  latex_template_url: null
+  word_template_url: "https://www.nature.com/nm/for-authors"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Nature"
+  keywords_required: false
+  keywords_count: null
+
+sections:
+  required: ["Abstract", "Introduction", "Results", "Discussion", "Methods"]
+  optional: ["Extended Data", "Supplementary Information"]
+  order: ["Abstract", "Introduction", "Results", "Discussion", "Methods"]
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "AI", "TIFF"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Competing interests"
+    - "Author contributions"
+    - "Data availability"
+    - "Code availability"
+    - "Ethics approval"
+  ethics_statement: true
+  clinical_trial_registration: true
+  orcid_required: true
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["CONSORT", "STROBE", "ARRIVE", "PRISMA"]
+  additional:
+    - "Life Sciences Reporting Summary required"
+    - "Clinical trial registration mandatory"
+    - "Patient consent required"
+    - "IRB approval required"
+
+submission:
+  system: "custom"
+  url: "https://mts-nm.nature.com"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract ≤200 words"
+    - "Articles: main text ≤5000 words"
+    - "Maximum 8 display items"
+    - "Extended Data figures allowed (not in main count)"
+  content_rules:
+    - "Direct relevance to human health required"
+    - "Mechanistic evidence required for claims"
+    - "Clinical translation potential must be clear"
+    - "Statistical validation required"
+  compliance_rules:
+    - "Life Sciences Reporting Summary required"
+    - "Clinical trial registration mandatory"
+    - "Ethics/IRB approval required"
+    - "Patient consent documented"
+    - "ORCID required"
+  language_rules:
+    - "Bridge basic science and clinical relevance"
+    - "Mechanistic insights must be supported by multiple approaches"

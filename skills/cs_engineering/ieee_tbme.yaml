@@ -1,0 +1,142 @@
+journal:
+  name: "IEEE Transactions on Biomedical Engineering"
+  abbreviation: "IEEE TBME"
+  publisher: "IEEE Engineering in Medicine and Biology Society"
+  url: "https://www.embs.org/tbme/prepare-a-manuscript/"
+  issn: "0018-9294"
+  impact_factor: 4.4
+  open_access: false
+  discipline: ["biomedical_engineering", "medical_devices", "biosignal_processing", "imaging", "neural_engineering"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Covers application of engineering principles to biology and medicine.
+    Includes biomedical devices, biosignal processing, biomedical imaging,
+    neural engineering, rehabilitation engineering, and computational biology.
+    Expects rigorous evaluation with appropriate statistical analysis.
+  keywords:
+    - "biomedical engineering"
+    - "medical devices"
+    - "biosignals"
+    - "biomedical imaging"
+    - "neural engineering"
+    - "rehabilitation"
+    - "wearables"
+    - "implantable devices"
+    - "computational biology"
+
+article_types:
+  - type: "Regular Manuscript"
+    word_limit: null
+    word_limit_scope: "page-based: 8 published pages expected; max 12"
+    abstract_limit: 250
+    abstract_type: "structured"
+    abstract_sections: ["Objective", "Methods", "Results", "Conclusion", "Significance"]
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: 12
+    notes: >
+      8 pages expected; overlength charges for pages 9-12.
+      >12 pages requires EiC approval.
+      Structured abstract: Objective/Methods/Results/Conclusion/Significance.
+      Cover letter <250 words required.
+
+  - type: "Correspondence"
+    word_limit: null
+    word_limit_scope: "2 pages"
+    abstract_limit: 100
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 2
+    tables_max: 2
+    references_max: 10
+    pages_max: 2
+
+format:
+  template: "ieee_two_column"
+  latex_template_url: "https://journals.ieeeauthorcenter.ieee.org"
+  word_template_url: "https://www.embs.org/tbme/prepare-a-manuscript/"
+  font: "Times New Roman"
+  font_size: 10
+  spacing: "single"
+  columns: 2
+  reference_style: "numbered"
+  reference_format: "IEEE"
+  keywords_required: true
+  keywords_count: "up to 5"
+  notes: >
+    Double-column single-spaced IEEE format. Submit as PDF.
+    Cover letter <250 words required (separate from manuscript).
+    Manuscript converted to PDF before upload.
+
+sections:
+  required: ["Abstract", "Introduction", "Methods", "Results", "Conclusion"]
+  optional: ["Discussion", "Acknowledgments", "Appendix"]
+  order: ["Abstract", "Introduction", "Methods", "Results", "Discussion", "Conclusion"]
+  notes: >
+    5-part structured abstract required: Objective/Methods/Results/Conclusion/Significance.
+    'Significance' section in abstract: one sentence on significance to biomedical research.
+    Conclusion section ≤300 words.
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "PDF", "TIFF"]
+  color_policy: "free_online"
+  graphical_abstract: false
+  notes: "Authors must get copyright permission for any figures from conference papers"
+
+checklist:
+  declarations_required:
+    - "Conflict of interest"
+    - "Funding"
+    - "Cover letter (<250 words)"
+  ethics_statement: true
+  clinical_trial_registration: false
+  orcid_required: false
+  cover_letter: "required"
+  ai_use_disclosure: false
+  data_availability: false
+  reporting_guidelines: []
+  additional:
+    - "Cover letter ≤250 words, submitted in text box (not sent to reviewers)"
+    - "Structured abstract with 5 subsections required"
+    - "Significance sentence in abstract required"
+    - "Conclusion section ≤300 words"
+    - "Statistical hypothesis testing and p-values required for method comparisons"
+    - "Concurrent conference submission must be disclosed"
+    - "Final submission within 10 days of acceptance"
+    - "Overlength charges for pages 9-12"
+
+submission:
+  system: "Author Portal"
+  url: "https://ieee.atyponrex.com/journal/tbme"
+  preprint_policy: "case_by_case"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Structured abstract required: Objective/Methods/Results/Conclusion/Significance"
+    - "Abstract ≤250 words"
+    - "Cover letter ≤250 words required (uploaded separately)"
+    - "8 published pages expected; maximum 12 pages"
+    - "Conclusion section ≤300 words"
+    - "5 IEEE keywords required"
+    - "Double-column single-spaced IEEE format"
+  content_rules:
+    - "Statistical hypothesis testing required for method comparisons"
+    - "Exact p-values and test statistics required"
+    - "Novel contribution to biomedical engineering field"
+    - "Engineering principles applied to biology/medicine"
+  compliance_rules:
+    - "Ethics approval for human subjects research"
+    - "Animal care guidelines compliance statement"
+    - "Conflict of interest disclosure"
+    - "Conference paper copyright permission required for reused figures"
+    - "Concurrent conference submission must be disclosed"
+  language_rules:
+    - "Abstract Significance sentence: one clear statement of biomedical importance"
+    - "Engineering precision: define all variables and units"
+    - "Results must include statistical tests"

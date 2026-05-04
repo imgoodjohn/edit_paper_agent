@@ -1,0 +1,146 @@
+journal:
+  name: "PLOS Medicine"
+  abbreviation: "PLoS Med."
+  publisher: "Public Library of Science"
+  url: "https://journals.plos.org/plosmedicine/s/submission-guidelines"
+  issn: "1549-1676"
+  impact_factor: 15.8
+  open_access: true
+  discipline: ["medicine", "public_health", "epidemiology", "global_health", "clinical_research"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Open-access medical journal with high impact. Publishes research, meta-research,
+    and commentary on human health with broad global importance. Strong emphasis on
+    public health, global health, and evidence-based medicine. Uses structured abstract
+    and rigorous reporting standards.
+  keywords:
+    - "public health"
+    - "global health"
+    - "epidemiology"
+    - "clinical research"
+    - "systematic review"
+    - "meta-analysis"
+    - "disease burden"
+    - "health policy"
+    - "health equity"
+
+article_types:
+  - type: "Research Article"
+    word_limit: 3500
+    word_limit_scope: "main text"
+    abstract_limit: 300
+    abstract_type: "structured"
+    abstract_sections: ["Background", "Methods and Findings", "Conclusions"]
+    figures_max: 5
+    tables_max: 5
+    references_max: 80
+    pages_max: null
+    notes: "Structured abstract with 3 sections. 'Methods and Findings' combined."
+
+  - type: "Systematic Review"
+    word_limit: 4000
+    word_limit_scope: "main text"
+    abstract_limit: 300
+    abstract_type: "structured"
+    abstract_sections: ["Background", "Methods and Findings", "Conclusions"]
+    figures_max: 5
+    tables_max: 5
+    references_max: 150
+    pages_max: null
+
+  - type: "Meta-Research"
+    word_limit: 3500
+    word_limit_scope: "main text"
+    abstract_limit: 300
+    abstract_type: "structured"
+    abstract_sections: ["Background", "Methods and Findings", "Conclusions"]
+    figures_max: 5
+    tables_max: 5
+    references_max: 100
+    pages_max: null
+    notes: "Research on research methods, bias, reproducibility in medicine"
+
+format:
+  template: "plos_style"
+  latex_template_url: null
+  word_template_url: "https://journals.plos.org/plosmedicine"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered_brackets"
+  reference_format: "PLOS"
+  keywords_required: false
+  keywords_count: null
+  notes: "References in [1] brackets with DOIs. Double-spaced with line numbers."
+
+sections:
+  required: ["Abstract", "Author Summary", "Introduction", "Methods", "Results", "Discussion"]
+  optional: ["Supporting Information"]
+  order: ["Abstract", "Author Summary", "Introduction", "Methods", "Results", "Discussion"]
+  notes: >
+    Author Summary: 200 words for non-specialist audience. Required.
+    Abstract uses 'Methods and Findings' (not separate Methods/Results).
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["TIFF", "EPS", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Competing interests"
+    - "Author contributions"
+    - "Data availability"
+    - "Funding"
+    - "Ethics approval"
+    - "Informed consent"
+  ethics_statement: true
+  clinical_trial_registration: true
+  orcid_required: false
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["CONSORT", "STROBE", "PRISMA", "STARD", "TRIPOD"]
+  additional:
+    - "Author Summary required (200 words, non-specialist)"
+    - "Reporting checklist required (CONSORT/STROBE/PRISMA as applicable)"
+    - "Clinical trial registration mandatory"
+    - "All data underlying figures and tables must be deposited"
+    - "APC charged (open access)"
+    - "EQUATOR Network reporting guidelines required"
+
+submission:
+  system: "custom"
+  url: "https://journals.plos.org/plosmedicine/s/submit-now"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+  apc: "$3500 USD (2024)"
+
+agents:
+  structure_rules:
+    - "Author Summary REQUIRED: ≤200 words for non-specialist"
+    - "Structured abstract: Background/Methods and Findings/Conclusions"
+    - "Abstract ≤300 words"
+    - "Main text ≤3500 words"
+    - "References in [1] bracket format with DOIs"
+    - "Reporting checklist uploaded as supporting file"
+  content_rules:
+    - "Broad global public health importance required"
+    - "CONSORT/STROBE/PRISMA compliance required"
+    - "Statistical methods: confidence intervals required"
+    - "Limitations explicitly stated"
+  compliance_rules:
+    - "Clinical trial registration mandatory"
+    - "Ethics approval required"
+    - "Reporting checklist uploaded"
+    - "All underlying data deposited"
+    - "Competing interests required"
+  language_rules:
+    - "Abstract uses 'Methods and Findings' as one section"
+    - "Author Summary: no jargon, for educated general public"
+    - "Report effect sizes and confidence intervals"

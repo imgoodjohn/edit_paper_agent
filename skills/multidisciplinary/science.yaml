@@ -1,0 +1,166 @@
+journal:
+  name: "Science"
+  abbreviation: "Science"
+  publisher: "AAAS (American Association for the Advancement of Science)"
+  url: "https://www.science.org/content/page/science-information-authors"
+  issn: "0036-8075"
+  impact_factor: 47.7
+  open_access: false
+  discipline: ["multidisciplinary", "biology", "chemistry", "physics", "social_science", "earth_science"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Weekly peer-reviewed journal publishing significant original scientific research,
+    reviews, and commentary. Seeks papers that are influential in their fields or
+    across fields, substantially advancing scientific understanding. Papers should
+    present novel and broadly important data, syntheses, or concepts.
+  keywords:
+    - "influential"
+    - "broadly important"
+    - "novel"
+    - "significant advance"
+    - "cross-disciplinary impact"
+    - "paradigm changing"
+
+article_types:
+  - type: "Research Article"
+    word_limit: 4500
+    word_limit_scope: "main text excluding abstract, references, figure legends"
+    abstract_limit: 125
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: 6
+    references_max: 50
+    pages_max: null
+    notes: "~4500 words, 6 figures/tables, ~40-50 references for a typical article"
+
+  - type: "Report"
+    word_limit: 2500
+    word_limit_scope: "main text"
+    abstract_limit: 125
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 4
+    tables_max: 4
+    references_max: 30
+    pages_max: null
+    notes: "Shorter format for significant but less comprehensive findings"
+
+  - type: "Review"
+    word_limit: 8000
+    word_limit_scope: "main text"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 8
+    tables_max: 8
+    references_max: 150
+    pages_max: null
+    notes: "Mostly solicited; propose to editors before submitting"
+
+  - type: "Perspective"
+    word_limit: 1200
+    word_limit_scope: "total text"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: 1
+    tables_max: 1
+    references_max: 20
+    pages_max: null
+    notes: "Solicited or proposed; comments on published research"
+
+  - type: "Letter"
+    word_limit: 300
+    word_limit_scope: "total text"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: 0
+    tables_max: 0
+    references_max: 5
+    pages_max: null
+
+format:
+  template: "science_style"
+  latex_template_url: "https://www.science.org/content/page/science-information-authors"
+  word_template_url: "https://www.science.org/content/page/science-information-authors"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Science"
+  keywords_required: false
+  keywords_count: null
+  notes: >
+    LaTeX users should convert to .docx or submit PDF at submission stage.
+    Use updated Word template when available.
+
+sections:
+  required: ["Abstract", "Introduction", "Results", "Discussion", "Materials and Methods"]
+  optional: ["Supplementary Materials", "Acknowledgments"]
+  order: ["Abstract", "Introduction", "Results", "Discussion", "Materials and Methods"]
+  notes: "Methods section often placed at end or in supplementary"
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "AI", "TIFF", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+  notes: "High-res required for acceptance; lower acceptable for review"
+
+checklist:
+  declarations_required:
+    - "Competing interests statement"
+    - "Author contributions"
+    - "Data availability statement"
+    - "Materials availability"
+    - "Acknowledgment of funding"
+  ethics_statement: true
+  clinical_trial_registration: true
+  orcid_required: false
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["CONSORT", "STROBE", "ARRIVE"]
+  additional:
+    - "Cover letter must state no duplicate submission"
+    - "Informed consent statement for human studies"
+    - "Animal care statement required"
+    - "Related manuscripts under review elsewhere must be disclosed"
+    - "Preprint arXiv/bioRxiv accepted"
+
+submission:
+  system: "custom"
+  url: "https://cts.sciencemag.org"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+  notes: "Same account used for all Science family journals"
+
+agents:
+  structure_rules:
+    - "Abstract must not exceed 125 words"
+    - "Research Articles: main text ≤4500 words"
+    - "Reports: main text ≤2500 words"
+    - "Maximum 6 display items (figures + tables)"
+    - "References typically ≤50 for Research Articles"
+    - "Materials and Methods section required"
+  content_rules:
+    - "Work must be influential and broadly important beyond single field"
+    - "Must substantially advance scientific understanding"
+    - "Novel data, syntheses, or concepts required"
+    - "Results must be clearly supported by data"
+  compliance_rules:
+    - "Cover letter required with no duplicate submission statement"
+    - "Ethics approval required for human/animal studies"
+    - "Clinical trials must be registered"
+    - "Informed consent statement for human participants"
+    - "Animal care institutional guidelines must be cited"
+  language_rules:
+    - "Abstract: general introduction + brief non-technical summary"
+    - "Write for broad scientific readership"
+    - "Concise, precise scientific writing"

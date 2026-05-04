@@ -1,0 +1,124 @@
+journal:
+  name: "Nature Human Behaviour"
+  abbreviation: "Nat. Hum. Behav."
+  publisher: "Springer Nature"
+  url: "https://www.nature.com/nathumbehav/for-authors"
+  issn: "2397-3374"
+  impact_factor: 21.4
+  open_access: false
+  discipline: ["psychology", "behavioral_science", "economics", "sociology", "cognitive_science", "neuroscience"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Publishes research on human behavior, cognition, society, and their biological bases.
+    Covers psychology, behavioral economics, sociology, cognitive neuroscience, and
+    related fields. Strong emphasis on replicability, open science, and methodology.
+  keywords:
+    - "psychology"
+    - "behavioral science"
+    - "cognitive science"
+    - "decision making"
+    - "social behavior"
+    - "neuroscience"
+    - "behavioral economics"
+    - "human cognition"
+
+article_types:
+  - type: "Article"
+    word_limit: 5000
+    word_limit_scope: "main text"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: null
+    references_max: 100
+    pages_max: null
+
+  - type: "Review"
+    word_limit: 6000
+    word_limit_scope: "main text"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: null
+    references_max: 150
+    pages_max: null
+
+format:
+  template: "nature_style"
+  latex_template_url: null
+  word_template_url: "https://www.nature.com/nathumbehav/for-authors"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Nature"
+  keywords_required: false
+  keywords_count: null
+
+sections:
+  required: ["Abstract", "Introduction", "Methods", "Results", "Discussion"]
+  optional: ["Extended Data", "Supplementary Information"]
+  order: ["Abstract", "Introduction", "Methods", "Results", "Discussion"]
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "AI", "TIFF"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Competing interests"
+    - "Author contributions"
+    - "Data availability"
+    - "Code availability"
+    - "Ethics approval"
+    - "Informed consent"
+  ethics_statement: true
+  clinical_trial_registration: false
+  orcid_required: true
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["CONSORT", "STROBE"]
+  additional:
+    - "Life Sciences Reporting Summary required"
+    - "Pre-registration encouraged or required for confirmatory studies"
+    - "Open materials and data strongly encouraged"
+    - "Power analyses required for primary claims"
+    - "Effect sizes must be reported"
+    - "Replication studies welcome"
+
+submission:
+  system: "custom"
+  url: "https://mts-nathumbehav.nature.com"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract ≤200 words"
+    - "Articles: ≤5000 words main text"
+    - "Maximum 6 display items"
+    - "Power analyses required"
+  content_rules:
+    - "Effect sizes required for all statistical tests"
+    - "Pre-registration information must be stated"
+    - "Replicability and open science emphasis"
+    - "Methods must enable full replication"
+  compliance_rules:
+    - "Ethics/IRB approval required"
+    - "Informed consent documented"
+    - "Open data encouraged; deposition required"
+    - "Pre-registration details stated"
+    - "ORCID required"
+  language_rules:
+    - "Report effect sizes with confidence intervals"
+    - "Avoid over-interpretation"
+    - "Open science practices described in Methods"

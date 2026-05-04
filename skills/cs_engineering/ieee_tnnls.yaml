@@ -1,0 +1,116 @@
+journal:
+  name: "IEEE Transactions on Neural Networks and Learning Systems"
+  abbreviation: "IEEE TNNLS"
+  publisher: "IEEE Computational Intelligence Society"
+  url: "https://cis.ieee.org/publications/t-neural-networks-and-learning-systems/tnnls-guidelines-for-paper-submission"
+  issn: "2162-237X"
+  impact_factor: 10.4
+  open_access: false
+  discipline: ["machine_learning", "neural_networks", "deep_learning", "AI", "computer_science"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Covers development, theory, and applications of neural networks and related
+    learning systems. Publishes theoretical, experimental, and applied research
+    on connectionist systems. Strong focus on algorithms and architectures.
+  keywords:
+    - "neural networks"
+    - "deep learning"
+    - "machine learning"
+    - "learning algorithms"
+    - "connectionist systems"
+    - "optimization"
+    - "reinforcement learning"
+
+article_types:
+  - type: "Regular Paper"
+    word_limit: null
+    word_limit_scope: "page-based"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: 15
+    notes: "15-page limit. Standard IEEE two-column format."
+
+  - type: "Brief Paper"
+    word_limit: null
+    word_limit_scope: "page-based"
+    abstract_limit: 100
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: 5
+    notes: "5-page brief paper format"
+
+format:
+  template: "ieee_two_column"
+  latex_template_url: "https://journals.ieeeauthorcenter.ieee.org"
+  word_template_url: "https://journals.ieeeauthorcenter.ieee.org"
+  font: "Times New Roman"
+  font_size: 10
+  spacing: "single"
+  columns: 2
+  reference_style: "numbered"
+  reference_format: "IEEE"
+  keywords_required: true
+  keywords_count: "4-5"
+
+sections:
+  required: ["Abstract", "Introduction", "Related Work", "Proposed Method", "Experiments", "Conclusion"]
+  optional: ["Appendix", "Proofs", "Acknowledgments"]
+  order: ["Abstract", "Introduction", "Related Work", "Proposed Method", "Experiments", "Conclusion"]
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "PDF", "TIFF"]
+  color_policy: "free_online"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Conflict of interest"
+    - "Funding"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: false
+  cover_letter: "optional"
+  ai_use_disclosure: true
+  data_availability: false
+  reporting_guidelines: []
+  additional:
+    - "4-5 keywords required"
+    - "IEEE format mandatory"
+    - "Author bios required at acceptance"
+
+submission:
+  system: "ScholarOne"
+  url: "https://mc.manuscriptcentral.com/tnnls"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract: reasonable length, informative summary including results"
+    - "4-5 IEEE index terms required"
+    - "Single-spaced double-column IEEE format"
+    - "Page limit: 15 pages for regular, 5 for brief"
+    - "All figures and tables embedded"
+  content_rules:
+    - "Novel contributions to neural network theory or applications"
+    - "Thorough experimental validation on benchmark datasets"
+    - "Comparison with state-of-the-art methods"
+    - "Ablation studies expected"
+  compliance_rules:
+    - "IEEE copyright transfer required"
+    - "Conflict of interest disclosure"
+    - "AI use disclosure"
+  language_rules:
+    - "Technical precision with mathematical notation"
+    - "Clear algorithm descriptions with pseudocode"

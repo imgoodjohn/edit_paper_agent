@@ -1,0 +1,108 @@
+journal:
+  name: "ACM Transactions on Computer Systems"
+  abbreviation: "ACM TOCS"
+  publisher: "Association for Computing Machinery"
+  url: "https://dl.acm.org/journal/tocs/author-guidelines"
+  issn: "0734-2071"
+  impact_factor: 2.3
+  open_access: false
+  discipline: ["operating_systems", "distributed_systems", "computer_architecture", "systems_software", "computer_science"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Covers the design, implementation, and analysis of computer systems. Includes
+    operating systems, distributed systems, computer networks, storage systems,
+    and computer architecture. Emphasizes systems that implement, manage, or
+    interact with hardware/software. Both theoretical and experimental work welcome.
+  keywords:
+    - "operating systems"
+    - "distributed systems"
+    - "computer networks"
+    - "storage systems"
+    - "computer architecture"
+    - "concurrent systems"
+    - "fault tolerance"
+    - "virtualization"
+    - "file systems"
+    - "scheduling"
+
+article_types:
+  - type: "Research Article"
+    word_limit: null
+    word_limit_scope: "no strict limit; ACM style"
+    abstract_limit: null
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Typical 20-50 pages in ACM format. Contact EiC for >60 pages."
+
+format:
+  template: "acm_style"
+  latex_template_url: "https://www.acm.org/publications/authors/submissions"
+  word_template_url: "https://www.acm.org/publications/authors/submissions"
+  font: null
+  font_size: null
+  spacing: null
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "ACM"
+  keywords_required: true
+  keywords_count: "ACM CCS categories required"
+  notes: "ACM LaTeX or Word style required. CCS concepts required."
+
+sections:
+  required: ["Abstract", "Introduction"]
+  optional: ["Appendix", "Acknowledgments"]
+  order: ["Abstract", "Introduction", "main_sections", "Conclusion", "References"]
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Competing interests"
+    - "ACM CCS concepts"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: true
+  cover_letter: "optional"
+  ai_use_disclosure: false
+  data_availability: false
+  reporting_guidelines: []
+  additional:
+    - "ACM CCS classification required"
+    - "ORCID required for all authors before publication"
+    - "Evaluation must be reproducible"
+    - "Artifact evaluation recommended (badge program)"
+
+submission:
+  system: "ScholarOne"
+  url: "https://mc.manuscriptcentral.com/tocs"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "ACM CCS classification required"
+    - "ACM LaTeX/Word format required"
+    - "ORCID required before publication"
+  content_rules:
+    - "Systems contribution: design, implementation, evaluation"
+    - "Experimental evaluation must be rigorous and reproducible"
+    - "Performance measurements: statistical confidence required"
+    - "Systems papers: real workloads preferred over synthetic"
+  compliance_rules:
+    - "ORCID required for all authors"
+    - "ACM eRights selection at acceptance"
+    - "Artifact evaluation badge available"
+  language_rules:
+    - "Abstract clearly states system, problem, and key results"
+    - "Evaluation section prominent with hardware/software specs"

@@ -1,0 +1,151 @@
+journal:
+  name: "Nature Methods"
+  abbreviation: "Nat. Methods"
+  publisher: "Springer Nature"
+  url: "https://www.nature.com/nmeth/for-authors"
+  issn: "1548-7091"
+  impact_factor: 36.1
+  open_access: false
+  discipline: ["biology", "biochemistry", "bioinformatics", "imaging", "genomics", "methods"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Publishes new methods and significant improvements to existing methods for
+    biology and related fields. Focuses on technical advances, tools, and resources
+    that enable new scientific discoveries. Methods must demonstrate broad utility
+    and be applicable to diverse biological systems.
+  keywords:
+    - "new methods"
+    - "biological tools"
+    - "imaging"
+    - "genomics methods"
+    - "single cell"
+    - "proteomics"
+    - "bioinformatics tools"
+    - "computational methods"
+    - "CRISPR"
+    - "live cell imaging"
+
+article_types:
+  - type: "Article"
+    word_limit: 3000
+    word_limit_scope: "main text excluding abstract, methods, references"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: null
+    references_max: 50
+    pages_max: null
+    notes: "Primary research article introducing a new method"
+
+  - type: "Brief Communication"
+    word_limit: 1500
+    word_limit_scope: "main text"
+    abstract_limit: 100
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 3
+    tables_max: null
+    references_max: 20
+    pages_max: null
+
+  - type: "Analysis"
+    word_limit: 3000
+    word_limit_scope: "main text"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: null
+    references_max: 50
+    pages_max: null
+    notes: "Computational analysis or benchmark comparison of methods"
+
+  - type: "Review"
+    word_limit: 5000
+    word_limit_scope: "main text"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: null
+    references_max: 100
+    pages_max: null
+
+format:
+  template: "nature_style"
+  latex_template_url: null
+  word_template_url: "https://www.nature.com/nmeth/for-authors"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Nature"
+  keywords_required: false
+  keywords_count: null
+
+sections:
+  required: ["Abstract", "Introduction", "Results", "Discussion", "Methods"]
+  optional: ["Supplementary Information"]
+  order: ["Abstract", "Introduction", "Results", "Discussion", "Methods"]
+  notes: "Methods must be highly detailed for reproducibility"
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "AI", "TIFF"]
+  color_policy: "free"
+  graphical_abstract: false
+  notes: "Code and data for computational methods must be deposited"
+
+checklist:
+  declarations_required:
+    - "Competing interests"
+    - "Author contributions"
+    - "Data availability"
+    - "Code availability"
+  ethics_statement: true
+  clinical_trial_registration: false
+  orcid_required: true
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["ARRIVE"]
+  additional:
+    - "Software/code must be deposited in public repository (GitHub, Zenodo, etc.)"
+    - "Benchmark datasets must be publicly available"
+    - "Life Sciences Reporting Summary required"
+    - "Method must demonstrate broad applicability beyond one system"
+
+submission:
+  system: "custom"
+  url: "https://mts-nmeth.nature.com"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract ≤150 words"
+    - "Articles: main text ≤3000 words"
+    - "Brief Communications: ≤1500 words, ≤3 figures"
+    - "Maximum 6 display items for Articles"
+    - "Methods section highly detailed"
+  content_rules:
+    - "New method or significant improvement must be demonstrated"
+    - "Broad utility beyond one specific biological question"
+    - "Validation on multiple biological systems required"
+    - "Comparison with existing methods required"
+    - "Reproducibility must be ensured"
+  compliance_rules:
+    - "Code/software must be in public repository at submission"
+    - "Data must be publicly available"
+    - "Life Sciences Reporting Summary required"
+    - "Competing interests required"
+    - "ORCID required"
+  language_rules:
+    - "Focus on the method, not the biological finding"
+    - "Methods section must enable replication"
+    - "Performance benchmarks must be clearly stated"

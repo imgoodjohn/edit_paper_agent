@@ -1,0 +1,130 @@
+journal:
+  name: "Annals of Internal Medicine"
+  abbreviation: "Ann. Intern. Med."
+  publisher: "American College of Physicians"
+  url: "https://www.acpjournals.org/journal/aim/authors"
+  issn: "0003-4819"
+  impact_factor: 39.2
+  open_access: false
+  discipline: ["internal_medicine", "clinical_research", "health_policy", "epidemiology"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Flagship journal of the American College of Physicians. Publishes original
+    research, reviews, and clinical practice content for internists. Strong emphasis
+    on clinical relevance, systematic reviews, and evidence-based medicine.
+  keywords:
+    - "internal medicine"
+    - "clinical research"
+    - "systematic review"
+    - "clinical practice"
+    - "epidemiology"
+    - "evidence-based medicine"
+
+article_types:
+  - type: "Original Research"
+    word_limit: 3000
+    word_limit_scope: "main text"
+    abstract_limit: 350
+    abstract_type: "structured"
+    abstract_sections: ["Background", "Objective", "Design", "Setting", "Patients/Participants", "Measurements", "Results", "Limitation", "Conclusion", "Primary Funding Source"]
+    figures_max: 5
+    tables_max: 5
+    references_max: 40
+    pages_max: null
+    notes: "Unique 10-section abstract including Limitation and Primary Funding Source"
+
+  - type: "Systematic Review"
+    word_limit: 3000
+    word_limit_scope: "main text"
+    abstract_limit: 350
+    abstract_type: "structured"
+    abstract_sections: ["Background", "Purpose", "Data Sources", "Study Selection", "Data Extraction", "Data Synthesis", "Limitation", "Conclusion", "Primary Funding Source"]
+    figures_max: 5
+    tables_max: 5
+    references_max: 100
+    pages_max: null
+
+  - type: "Brief Report"
+    word_limit: 1500
+    word_limit_scope: "main text"
+    abstract_limit: 200
+    abstract_type: "structured"
+    abstract_sections: ["Background", "Objective", "Design", "Results", "Limitation", "Conclusion"]
+    figures_max: 2
+    tables_max: 2
+    references_max: 20
+    pages_max: null
+
+format:
+  template: "aim_style"
+  latex_template_url: null
+  word_template_url: "https://www.acpjournals.org/journal/aim/authors"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "AIM_Vancouver"
+  keywords_required: false
+  keywords_count: null
+  notes: "Unique abstract includes 'Limitation' section explicitly"
+
+sections:
+  required: ["Abstract", "Introduction", "Methods", "Results", "Discussion"]
+  optional: ["Supplementary Material"]
+  order: ["Abstract", "Introduction", "Methods", "Results", "Discussion"]
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["TIFF", "EPS"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Conflict of interest (all authors)"
+    - "Funding sources (in abstract AND manuscript)"
+    - "Author contributions"
+    - "Data availability"
+    - "IRB approval"
+  ethics_statement: true
+  clinical_trial_registration: true
+  orcid_required: false
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["CONSORT", "STROBE", "PRISMA"]
+  additional:
+    - "Limitation section REQUIRED in abstract"
+    - "Primary Funding Source required at end of abstract"
+    - "Clinical trial registration required"
+    - "ICMJE authorship criteria must be met"
+
+submission:
+  system: "Editorial Manager"
+  url: "https://www.editorialmanager.com/aim"
+  preprint_policy: "case_by_case"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract must include 'Limitation' section (unique requirement)"
+    - "Abstract must include 'Primary Funding Source' section"
+    - "Abstract structured with 10 sections for original research"
+    - "Main text ≤3000 words"
+    - "References ≤40"
+  content_rules:
+    - "Clinical relevance to internal medicine practice required"
+    - "Limitations must be explicitly stated in abstract AND manuscript"
+    - "Statistical methods must include confidence intervals"
+  compliance_rules:
+    - "Clinical trial registration required"
+    - "All author conflicts of interest required"
+    - "Funding source in abstract required"
+    - "IRB approval required"
+  language_rules:
+    - "Include 'Limitation' as explicit abstract section"
+    - "Abstract ends with 'Primary Funding Source:'"

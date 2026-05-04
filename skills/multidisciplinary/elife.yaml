@@ -1,0 +1,144 @@
+journal:
+  name: "eLife"
+  abbreviation: "eLife"
+  publisher: "eLife Sciences Publications"
+  url: "https://elifesciences.org/authors/author-guide"
+  issn: "2050-084X"
+  impact_factor: 6.4
+  open_access: true
+  discipline: ["biology", "medicine", "neuroscience", "genetics", "microbiology", "cell_biology"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Open-access journal for outstanding research in life sciences and biomedicine.
+    Uses a consultative review model where editors and reviewers work together.
+    Accepts research articles, short reports, tools and resources, and reviews.
+    No rejection after peer review for papers passing initial editorial assessment.
+  keywords:
+    - "life sciences"
+    - "biomedicine"
+    - "neuroscience"
+    - "genetics"
+    - "cell biology"
+    - "microbiology"
+    - "outstanding research"
+
+article_types:
+  - type: "Research Article"
+    word_limit: null
+    word_limit_scope: "no strict limit; comprehensive studies"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Full-length research article. No strict word limit."
+
+  - type: "Short Report"
+    word_limit: 2500
+    word_limit_scope: "main text"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 4
+    tables_max: 4
+    references_max: null
+    pages_max: null
+    notes: "Concise, focused study with compelling findings"
+
+  - type: "Tools and Resources"
+    word_limit: null
+    word_limit_scope: "no limit"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "New methods, software, datasets, or resources"
+
+  - type: "Review Article"
+    word_limit: null
+    word_limit_scope: "comprehensive"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Usually invited; comprehensive review of a field"
+
+format:
+  template: "elife_style"
+  latex_template_url: "https://elifesciences.org/authors/author-guide"
+  word_template_url: "https://elifesciences.org/authors/author-guide"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "author-year"
+  reference_format: "eLife"
+  keywords_required: false
+  keywords_count: null
+
+sections:
+  required: ["Abstract", "Introduction", "Results", "Discussion", "Materials and Methods"]
+  optional: ["Appendices", "Supplementary Files"]
+  order: ["Abstract", "Introduction", "Results", "Discussion", "Materials and Methods"]
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "PDF", "TIFF"]
+  color_policy: "free"
+  graphical_abstract: false
+  notes: "Figure supplements allowed for additional panels"
+
+checklist:
+  declarations_required:
+    - "Competing interests"
+    - "Author contributions"
+    - "Funding information"
+    - "Data availability"
+  ethics_statement: true
+  clinical_trial_registration: true
+  orcid_required: true
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["CONSORT", "ARRIVE", "STROBE"]
+  additional:
+    - "Reviewed preprints model: post preprint, receive public peer review"
+    - "Decision letters and author responses published"
+    - "No rejection after peer review for passing papers"
+
+submission:
+  system: "custom"
+  url: "https://submit.elifesciences.org"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "open"
+  apc: "$2500 USD (from 2023)"
+
+agents:
+  structure_rules:
+    - "Abstract ≤150 words"
+    - "Short Reports: main text ≤2500 words, ≤4 figures"
+    - "All standard sections required for Research Articles"
+    - "Figure supplements allowed for additional data"
+  content_rules:
+    - "Outstanding research with significant impact in life sciences"
+    - "Short Reports must have compelling, focused findings"
+    - "Methods must ensure reproducibility"
+  compliance_rules:
+    - "ORCID required for all authors"
+    - "Competing interests required"
+    - "Data availability required"
+    - "Ethics approval for human/animal studies"
+  language_rules:
+    - "Abstract as standalone summary"
+    - "Clear separation of results from interpretation"

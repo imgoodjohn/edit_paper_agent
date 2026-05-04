@@ -1,0 +1,113 @@
+journal:
+  name: "Nature Communications"
+  abbreviation: "Nat. Commun."
+  publisher: "Springer Nature"
+  url: "https://www.nature.com/ncomms/submit/article"
+  issn: "2041-1723"
+  impact_factor: 14.7
+  open_access: true
+  discipline: ["multidisciplinary", "biology", "chemistry", "physics", "materials", "earth_science"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Publishes high-quality research across all fields of biology, chemistry, physics, and
+    earth sciences. Accepts original research in one format (Articles) of any length from
+    short communications to in-depth studies. Quality and interest to specific research
+    community are key criteria.
+  keywords:
+    - "original research"
+    - "high quality"
+    - "rigorous methodology"
+    - "significant findings"
+    - "natural sciences"
+
+article_types:
+  - type: "Article"
+    word_limit: 5000
+    word_limit_scope: "main text excluding abstract, methods, references, figure legends"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 10
+    tables_max: 10
+    references_max: null
+    pages_max: null
+    notes: >
+      Up to 10 display items total for articles >2000 words.
+      Articles <2000 words: max 4 figures/tables.
+      No word limit enforced at initial submission.
+
+format:
+  template: "nature_style"
+  latex_template_url: null
+  word_template_url: "https://www.nature.com/ncomms/submit"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Nature"
+  keywords_required: false
+  keywords_count: null
+  title_max_words: 15
+  notes: "Very flexible for initial submission. Formatting details provided after revision."
+
+sections:
+  required: ["Abstract", "Introduction", "Results", "Methods"]
+  optional: ["Discussion", "Supplementary Information"]
+  order: ["Abstract", "Introduction", "Results", "Discussion", "Methods"]
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "AI", "TIFF", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+  notes: "Schemes not used; present as figures"
+
+checklist:
+  declarations_required:
+    - "Competing interests statement"
+    - "Author contributions"
+    - "Data availability statement"
+    - "Code availability statement (if applicable)"
+  ethics_statement: true
+  clinical_trial_registration: true
+  orcid_required: true
+  cover_letter: "optional"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["CONSORT", "STROBE", "PRISMA", "ARRIVE"]
+  additional:
+    - "Peer review reports may be published"
+    - "Preprints accepted"
+
+submission:
+  system: "custom"
+  url: "https://mts-ncomms.nature.com"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract must not exceed 200 words, no references in abstract"
+    - "Title should not exceed 15 words"
+    - "Main text ideally limited to 5000 words"
+    - "Display items commensurate with word length (max 10 for >2000 words)"
+    - "Introduction section required"
+    - "Methods section required"
+  content_rules:
+    - "Original research of high quality and interest to specific research community"
+    - "Short communications acceptable alongside in-depth studies"
+    - "Results must be clearly presented"
+  compliance_rules:
+    - "Competing interests declaration required"
+    - "Data availability statement required"
+    - "ORCID required for corresponding author"
+    - "Ethics approval for human/animal studies"
+    - "AI use disclosure required"
+  language_rules:
+    - "Abstract serves as general introduction + brief non-technical summary"
+    - "Write for readers beyond immediate specialist community"
+    - "Schemes must be presented as figures (no separate scheme format)"

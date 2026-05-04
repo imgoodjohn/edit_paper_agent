@@ -1,0 +1,119 @@
+journal:
+  name: "Journal of the ACM"
+  abbreviation: "JACM"
+  publisher: "Association for Computing Machinery"
+  url: "https://dl.acm.org/journal/jacm/author-guidelines"
+  issn: "0004-5411"
+  impact_factor: 3.5
+  open_access: false
+  discipline: ["computer_science", "algorithms", "theory", "mathematics", "foundations"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Publishes outstanding work in all areas of computer science theory and practice.
+    Primary focus on fundamental contributions. Covers algorithms, data structures,
+    computational complexity, programming languages, AI foundations, cryptography,
+    databases, and systems theory. Highest-prestige ACM journal.
+  keywords:
+    - "algorithms"
+    - "computational complexity"
+    - "theory of computation"
+    - "data structures"
+    - "programming languages"
+    - "cryptography"
+    - "foundations"
+    - "formal methods"
+
+article_types:
+  - type: "Research Article"
+    word_limit: null
+    word_limit_scope: "no strict limit; ACM style"
+    abstract_limit: null
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: >
+      No page limit. Typically 30-60 pages in ACM format.
+      Papers >50 pages: contact EiC before submitting.
+
+format:
+  template: "acm_style"
+  latex_template_url: "https://www.acm.org/publications/authors/submissions"
+  word_template_url: "https://www.acm.org/publications/authors/submissions"
+  font: null
+  font_size: null
+  spacing: null
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "ACM"
+  keywords_required: true
+  keywords_count: "ACM CCS categories required"
+  notes: >
+    LaTeX or Word in ACM style required.
+    ACM Computing Classification System (CCS) categories required.
+    Submit PDF for review; source files required at acceptance.
+    ORCID required for all accepted authors before publication.
+
+sections:
+  required: ["Abstract", "Introduction"]
+  optional: ["Appendix", "Acknowledgments"]
+  order: ["Abstract", "Introduction", "main_sections", "Conclusion", "References"]
+  notes: "ACM CCS classification categories must be included"
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Competing interests"
+    - "Acknowledgments"
+    - "Author contributions (optional)"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: true
+  cover_letter: "optional"
+  ai_use_disclosure: false
+  data_availability: false
+  reporting_guidelines: []
+  additional:
+    - "ORCID required for all authors before publication"
+    - "ACM CCS classification required"
+    - "Submit via ScholarOne: https://mc.manuscriptcentral.com/jacm"
+    - "Supplementary material posted on ACM DL home page of article"
+    - "Author representations form required at submission"
+
+submission:
+  system: "ScholarOne"
+  url: "https://mc.manuscriptcentral.com/jacm"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "ACM Computing Classification System (CCS) categories required"
+    - "ORCID required for all authors at publication"
+    - "Papers >50 pages: contact EiC before submitting"
+    - "ACM LaTeX or Word style required"
+    - "Abstract must be present"
+  content_rules:
+    - "Outstanding fundamental contribution to CS theory or practice"
+    - "Rigorous proofs required for theoretical claims"
+    - "Novelty must be clearly established relative to prior work"
+    - "Broader significance must be explained"
+  compliance_rules:
+    - "ORCID required for all authors before publication"
+    - "Competing interests declaration required"
+    - "Author representations form required"
+    - "ACM eRights selection required at acceptance"
+  language_rules:
+    - "Abstract concisely conveys the problem, approach, and contribution"
+    - "Theorems formally stated before proof"
+    - "Notation clearly defined"

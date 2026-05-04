@@ -1,0 +1,138 @@
+journal:
+  name: "ACM Transactions on Programming Languages and Systems"
+  abbreviation: "ACM TOPLAS"
+  publisher: "Association for Computing Machinery"
+  url: "https://dl.acm.org/journal/toplas/author-guidelines"
+  issn: "0164-0925"
+  impact_factor: 2.1
+  open_access: false
+  discipline: ["programming_languages", "compilers", "formal_methods", "type_theory", "program_verification", "computer_science"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Theory and practice of programming languages, including semantics, implementation,
+    and verification. Welcomes experimental comparison papers, reproduction studies,
+    tutorial/survey papers. Papers must advance state of the art significantly.
+    Journal-first option with presentation at POPL, PLDI, OOPSLA, ECOOP, ESOP.
+  keywords:
+    - "programming languages"
+    - "compilers"
+    - "type systems"
+    - "program verification"
+    - "formal semantics"
+    - "program analysis"
+    - "runtime systems"
+    - "language design"
+    - "static analysis"
+    - "program synthesis"
+
+article_types:
+  - type: "Research Article"
+    word_limit: null
+    word_limit_scope: "no strict limit; >50 pages contact EiC first"
+    abstract_limit: null
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: >
+      Typical length: 30-60 pages ACM format.
+      For papers likely >50 pages, contact Editor in Chief before submitting.
+      At least 30% new material required over any conference version.
+
+  - type: "Survey/Tutorial"
+    word_limit: null
+    word_limit_scope: "comprehensive"
+    abstract_limit: null
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Definitive resource for researchers entering the area"
+
+format:
+  template: "acm_style"
+  latex_template_url: "https://www.acm.org/publications/authors/submissions"
+  word_template_url: "https://www.acm.org/publications/authors/submissions"
+  font: null
+  font_size: null
+  spacing: null
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "ACM"
+  keywords_required: true
+  keywords_count: "ACM CCS categories required"
+  notes: >
+    LaTeX or Word in ACM style. Do NOT include line numbers in submission
+    (added automatically before going to review). ACM CCS required.
+    No reviewer-identifying information.
+
+sections:
+  required: ["Abstract", "Introduction"]
+  optional: ["Appendix", "Acknowledgments"]
+  order: ["Abstract", "Introduction", "main_sections", "Conclusion", "References"]
+  notes: "ACM CCS classification required. Author representations required."
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Competing interests"
+    - "ACM CCS classification"
+    - "Author representations"
+  ethics_statement: false
+  clinical_trial_registration: false
+  orcid_required: true
+  cover_letter: "required"
+  ai_use_disclosure: false
+  data_availability: false
+  reporting_guidelines: []
+  additional:
+    - "Conference version: must have ≥30% new material (not just 25% ACM general policy)"
+    - "Journal-first option: must submit ≥3 months before partner conference deadline"
+    - "Cover letter: state conference presentation interest and identify conference"
+    - "Desk reject criteria: out of scope, insufficient novelty, simultaneous submission, plagiarism"
+    - "iThenticate plagiarism check run on all submissions"
+    - "ORCID required for all authors before publication"
+    - "Language editing services: ACM partner ISE offers 15% discount"
+
+submission:
+  system: "ScholarOne"
+  url: "https://mc.manuscriptcentral.com/toplas"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+  notes: "Journal-first partnerships with POPL, PLDI, OOPSLA, ECOOP, ESOP"
+
+agents:
+  structure_rules:
+    - "ACM CCS classification categories required"
+    - "Line numbers NOT included in submission (added automatically)"
+    - "For papers >50 pages: contact EiC first"
+    - "ACM LaTeX/Word style required"
+    - "No author-identifying information visible to reviewers"
+  content_rules:
+    - "Theory and/or practice of programming languages"
+    - "Must advance state of the art significantly"
+    - "Experimental comparison papers welcome"
+    - "Reproduction/replication studies welcome"
+    - "Conference extension: ≥30% substantively new material required"
+  compliance_rules:
+    - "Simultaneous submission to other journals prohibited"
+    - "Conference version: disclose and ensure ≥30% new material"
+    - "iThenticate plagiarism check: high similarity flagged"
+    - "ORCID required for all authors"
+    - "Cover letter for journal-first must identify target conference"
+  language_rules:
+    - "Abstract must clearly state problem, approach, and contribution"
+    - "Theorems formally stated, proofs complete or sketched with full proof in appendix"
+    - "Related work must be comprehensive and honest"

@@ -1,0 +1,158 @@
+journal:
+  name: "Nature"
+  abbreviation: "Nature"
+  publisher: "Springer Nature"
+  url: "https://www.nature.com/nature/for-authors/initial-submission"
+  issn: "0028-0836"
+  impact_factor: 50.5
+  open_access: false
+  discipline: ["multidisciplinary", "biology", "chemistry", "physics", "earth_science"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Nature publishes the finest peer-reviewed research in all fields of science and technology.
+    Seeks papers of outstanding scientific importance representing a major advance, with broad
+    implications beyond a single field.
+  keywords:
+    - "breakthrough discovery"
+    - "fundamental science"
+    - "cross-disciplinary"
+    - "high impact"
+    - "novel findings"
+    - "paradigm shift"
+
+article_types:
+  - type: "Article"
+    word_limit: 3500
+    word_limit_scope: "main text excluding abstract, methods, references, figure legends"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: 6
+    references_max: 50
+    pages_max: 8
+    notes: "6 display items total (figures + tables combined)"
+
+  - type: "Letter"
+    word_limit: 1500
+    word_limit_scope: "main text excluding ~200 word intro paragraph and references"
+    abstract_limit: null
+    abstract_type: "intro_paragraph"
+    abstract_sections: []
+    figures_max: 4
+    tables_max: 4
+    references_max: 30
+    pages_max: 4
+    notes: "Intro paragraph ~200 words, fully referenced"
+
+  - type: "Review"
+    word_limit: 4000
+    word_limit_scope: "main text"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: 6
+    references_max: 100
+    pages_max: null
+    notes: "Usually solicited; contact editors before submitting"
+
+  - type: "Methods"
+    word_limit: 3000
+    word_limit_scope: "main text"
+    abstract_limit: 150
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 6
+    tables_max: 6
+    references_max: 50
+    pages_max: null
+
+format:
+  template: "nature_style"
+  latex_template_url: null
+  word_template_url: "https://www.nature.com/nature/for-authors/formatting-guide"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Nature"
+  keywords_required: false
+  keywords_count: null
+  title_max_chars: 75
+  notes: "Include article titles in reference list. Number all lines in PDF."
+
+sections:
+  required: ["Abstract", "Introduction", "Results", "Methods"]
+  optional: ["Discussion", "Extended Data", "Supplementary Information"]
+  order: ["Abstract", "Introduction", "Results", "Discussion", "Methods"]
+  notes: >
+    Avoid using 'Introduction' as a heading (implied). Subheadings allowed in Results.
+    Methods appears online but not always in print.
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["EPS", "AI", "TIFF", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+  legend_max_words: 250
+  notes: "High-res not required at initial submission. Single PDF preferred."
+
+checklist:
+  declarations_required:
+    - "Competing interests statement (mandatory)"
+    - "Author contributions"
+    - "Data availability statement"
+    - "Code availability statement (if applicable)"
+    - "Materials availability"
+  ethics_statement: true
+  clinical_trial_registration: true
+  orcid_required: false
+  cover_letter: "optional"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["CONSORT", "STROBE", "ARRIVE"]
+  additional:
+    - "Life Sciences Reporting Summary required for biological studies"
+    - "Statistics reporting must include exact n values"
+    - "Error bars must be defined in all figures"
+    - "Preprint accepted (arXiv, bioRxiv)"
+
+submission:
+  system: "custom"
+  url: "https://mts-nature.nature.com"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+  initial_format: "flexible"
+  notes: "Initial submission flexible. Strict formatting only after revision invite."
+
+agents:
+  structure_rules:
+    - "Abstract must not exceed 150 words"
+    - "Main text (Articles) must not exceed 3500 words"
+    - "Maximum 6 display items (figures + tables combined)"
+    - "Reference count should not exceed 50"
+    - "Methods section must be present in original research"
+    - "Title should be 75 characters or fewer"
+  content_rules:
+    - "Study must represent a major advance with broad implications"
+    - "Results and Discussion should be clearly separated"
+    - "Methods must enable interpretation and replication"
+    - "Statistical methods must be fully described"
+    - "Exact n values required for all statistics"
+  compliance_rules:
+    - "Competing interests declaration required"
+    - "Data availability statement required"
+    - "Ethics approval required for human/animal studies"
+    - "Clinical trials must be registered before enrollment"
+    - "AI use must be disclosed in cover letter and manuscript"
+    - "Life Sciences Reporting Summary needed for biology papers"
+  language_rules:
+    - "Avoid 'Introduction' as explicit heading"
+    - "Write for broad scientific audience, not specialists only"
+    - "Active voice preferred"
+    - "Figure legends: brief title + description of what is depicted, not results"

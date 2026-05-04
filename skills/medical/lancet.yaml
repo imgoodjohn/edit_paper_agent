@@ -1,0 +1,154 @@
+journal:
+  name: "The Lancet"
+  abbreviation: "Lancet"
+  publisher: "Elsevier"
+  url: "https://www.thelancet.com/for-authors"
+  issn: "0140-6736"
+  impact_factor: 98.4
+  open_access: false
+  discipline: ["medicine", "clinical_research", "public_health", "global_health"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    One of the oldest and most respected general medical journals. Publishes original
+    research, reviews, and commentary on clinical medicine, public health, and global
+    health. Seeks work with immediate clinical relevance and broad international impact.
+  keywords:
+    - "clinical medicine"
+    - "public health"
+    - "global health"
+    - "clinical trial"
+    - "epidemiology"
+    - "health policy"
+    - "international health"
+
+article_types:
+  - type: "Articles"
+    word_limit: 3000
+    word_limit_scope: "main text"
+    abstract_limit: 300
+    abstract_type: "structured"
+    abstract_sections: ["Background", "Methods", "Findings", "Interpretation", "Funding"]
+    figures_max: 4
+    tables_max: 4
+    references_max: 60
+    pages_max: null
+    notes: >
+      Word count 3000 main text. Structured abstract 300 words.
+      5-section abstract: Background/Methods/Findings/Interpretation/Funding.
+
+  - type: "Short Report"
+    word_limit: 1500
+    word_limit_scope: "main text"
+    abstract_limit: 150
+    abstract_type: "structured"
+    abstract_sections: ["Background", "Methods", "Findings", "Interpretation"]
+    figures_max: 2
+    tables_max: 2
+    references_max: 20
+    pages_max: null
+
+  - type: "Review"
+    word_limit: 5000
+    word_limit_scope: "main text"
+    abstract_limit: 300
+    abstract_type: "structured"
+    abstract_sections: ["Background", "Methods", "Findings", "Interpretation"]
+    figures_max: 5
+    tables_max: 5
+    references_max: 100
+    pages_max: null
+    notes: "Mostly invited"
+
+  - type: "Correspondence"
+    word_limit: 250
+    word_limit_scope: "total"
+    abstract_limit: null
+    abstract_type: "none"
+    abstract_sections: []
+    figures_max: 1
+    tables_max: 1
+    references_max: 5
+    pages_max: null
+
+format:
+  template: "lancet_style"
+  latex_template_url: null
+  word_template_url: "https://www.thelancet.com/for-authors"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered"
+  reference_format: "Vancouver"
+  keywords_required: false
+  keywords_count: null
+  notes: "Abstract uses 'Findings' instead of 'Results'; 'Interpretation' instead of 'Conclusions'"
+
+sections:
+  required: ["Abstract", "Introduction", "Methods", "Findings", "Discussion"]
+  optional: ["Panel", "Supplementary appendix"]
+  order: ["Abstract", "Introduction", "Methods", "Findings", "Discussion"]
+  notes: "Results section called 'Findings' in Lancet style"
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["TIFF", "EPS", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Conflicts of interest (all authors)"
+    - "Funding sources"
+    - "Author contributions (CRediT)"
+    - "Data sharing statement"
+    - "Ethics approval"
+  ethics_statement: true
+  clinical_trial_registration: true
+  orcid_required: true
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["CONSORT", "STROBE", "PRISMA", "TRIPOD"]
+  additional:
+    - "Panel format available for related background information"
+    - "Results section named 'Findings'"
+    - "Abstract uses 'Findings' and 'Interpretation' terminology"
+    - "Funding line required in abstract"
+    - "Clinical trial registration mandatory"
+
+submission:
+  system: "custom"
+  url: "https://www.thelancet.com/for-authors/submission"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+
+agents:
+  structure_rules:
+    - "Abstract must not exceed 300 words, must be 5-section structured"
+    - "Abstract sections: Background/Methods/Findings/Interpretation/Funding"
+    - "Main text for Articles ≤3000 words"
+    - "Maximum 4 figures/tables for Articles"
+    - "Results section must be labeled 'Findings' not 'Results'"
+    - "References ≤60"
+  content_rules:
+    - "Work must have immediate clinical relevance"
+    - "Broad international public health impact required"
+    - "Statistical methods must include confidence intervals"
+    - "CONSORT/STROBE/PRISMA compliance required"
+  compliance_rules:
+    - "Clinical trial registration mandatory before enrollment"
+    - "All author conflicts of interest required"
+    - "CRediT author contributions required"
+    - "Ethics approval statement required"
+    - "Data sharing statement required"
+    - "ORCID required"
+    - "Funding line must appear in abstract"
+  language_rules:
+    - "Use 'Findings' not 'Results' in abstract and section heading"
+    - "Use 'Interpretation' not 'Conclusions' in abstract"
+    - "Funding statement required as final abstract paragraph"
+    - "Writing for clinicians worldwide, not specialists only"

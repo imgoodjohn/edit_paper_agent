@@ -1,0 +1,146 @@
+journal:
+  name: "PLOS Genetics"
+  abbreviation: "PLoS Genet."
+  publisher: "Public Library of Science"
+  url: "https://journals.plos.org/plosgenetics/s/submission-guidelines"
+  issn: "1553-7390"
+  impact_factor: 4.5
+  open_access: true
+  discipline: ["genetics", "genomics", "population_genetics", "evolutionary_genetics", "epigenetics", "molecular_genetics"]
+  last_verified: "2025-01-01"
+
+scope:
+  description: >
+    Open-access journal covering genetics and genomics research. Publishes
+    studies on genes, genomes, and their role in biology and disease across
+    all organisms. Covers population genetics, functional genomics, epigenetics,
+    gene regulation, and comparative genomics.
+  keywords:
+    - "genetics"
+    - "genomics"
+    - "population genetics"
+    - "GWAS"
+    - "epigenetics"
+    - "gene regulation"
+    - "quantitative genetics"
+    - "evolutionary genetics"
+    - "mutation"
+    - "genetic mapping"
+
+article_types:
+  - type: "Research Article"
+    word_limit: null
+    word_limit_scope: "no strict limit; concise reporting encouraged"
+    abstract_limit: 300
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+    notes: "Typical range 4000–7000 words main text"
+
+  - type: "Short Report"
+    word_limit: 2500
+    word_limit_scope: "main text"
+    abstract_limit: 200
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: 4
+    tables_max: 2
+    references_max: 40
+    pages_max: null
+
+  - type: "Methods"
+    word_limit: null
+    word_limit_scope: "comprehensive"
+    abstract_limit: 300
+    abstract_type: "unstructured"
+    abstract_sections: []
+    figures_max: null
+    tables_max: null
+    references_max: null
+    pages_max: null
+
+format:
+  template: "plos_style"
+  latex_template_url: "https://journals.plos.org/plosgenetics/s/latex"
+  word_template_url: "https://journals.plos.org/plosgenetics"
+  font: null
+  font_size: null
+  spacing: "double"
+  columns: 1
+  reference_style: "numbered_brackets"
+  reference_format: "PLOS"
+  keywords_required: false
+  keywords_count: null
+  notes: "References in [1] bracket format. DOIs required."
+
+sections:
+  required: ["Abstract", "Author Summary", "Introduction", "Results", "Discussion", "Materials and Methods"]
+  optional: ["Supporting Information"]
+  order: ["Abstract", "Author Summary", "Introduction", "Results", "Discussion", "Materials and Methods"]
+  notes: >
+    Author Summary required: 150–200 words written for non-specialist audience.
+    Placed immediately after abstract. Must avoid jargon.
+
+figures:
+  min_resolution_dpi: 300
+  preferred_formats: ["TIFF", "EPS", "PDF"]
+  color_policy: "free"
+  graphical_abstract: false
+
+checklist:
+  declarations_required:
+    - "Competing interests"
+    - "Author contributions"
+    - "Data availability"
+    - "Funding"
+  ethics_statement: true
+  clinical_trial_registration: false
+  orcid_required: false
+  cover_letter: "required"
+  ai_use_disclosure: true
+  data_availability: true
+  reporting_guidelines: ["ARRIVE", "STROBE"]
+  additional:
+    - "Author Summary REQUIRED (150-200 words, non-specialist language)"
+    - "Sequence data deposited in GenBank/GEO/SRA with accession numbers"
+    - "GWAS data deposited in NHGRI-EBI GWAS Catalog or dbGaP"
+    - "Genotyping data: informed consent required for human subjects"
+    - "Double-spaced with line numbers"
+    - "References in [1] bracket format with DOIs"
+
+submission:
+  system: "custom"
+  url: "https://journals.plos.org/plosgenetics/s/submit-now"
+  preprint_policy: "accepted"
+  double_blind: false
+  review_type: "single_blind"
+  apc: "$2500 USD (2024)"
+
+agents:
+  structure_rules:
+    - "Author Summary REQUIRED: 150–200 words for non-specialist audience"
+    - "Author Summary placed after abstract, before Introduction"
+    - "Abstract ≤300 words"
+    - "References use [1] bracket format, not superscripts"
+    - "DOIs required in all references"
+    - "Double-spaced with line and page numbers"
+    - "All standard IMRAD sections required"
+  content_rules:
+    - "Genetics/genomics focus required"
+    - "Sequence data deposited with accession numbers"
+    - "GWAS: genome-wide significance thresholds required"
+    - "Population genetics: sample sizes and diversity required"
+    - "Methods must ensure genetic analysis reproducibility"
+  compliance_rules:
+    - "Ethics approval for human subjects"
+    - "Informed consent for human genotyping data"
+    - "Sequence accession numbers in manuscript"
+    - "Competing interests declaration"
+    - "Data availability with repository links"
+  language_rules:
+    - "Author Summary must avoid jargon; written for educated non-specialist"
+    - "Abstract clear without excessive genetics terminology"
+    - "Define all genetic/statistical terminology at first use"
